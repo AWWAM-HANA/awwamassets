@@ -35,7 +35,11 @@
     <tbody></tbody>
     <tfoot>
       <tr>
-        <th colspan="5" style="text-align:right">Total:</th>
+        <th></th> <!-- Asset -->
+        <th></th> <!-- Jenis Aset -->
+        <th></th> <!-- Tahun -->
+        <th></th> <!-- Item -->
+        <th></th> <!-- Detail -->
         <th></th> <!-- NETT PRICE -->
         <th></th> <!-- GST -->
         <th></th> <!-- TOTAL -->
@@ -74,7 +78,6 @@
         data.forEach(row => {
           rows += "<tr>";
           headers.forEach(h => { 
-            // Format NETT PRICE, GST, TOTAL with RM
             if(h === "NETT PRICE" || h === "GST" || h === "TOTAL") {
               let val = parseFloat(row[h].replace(/,/g,'')) || 0;
               rows += "<td>" + new Intl.NumberFormat('ms-MY', { style: 'currency', currency: 'MYR' }).format(val) + "</td>";
@@ -95,21 +98,14 @@
           fixedHeader: true,
           footerCallback: function(row, data, start, end, display) {
             let api = this.api();
-
-            // Convert string to float
             let parseValue = function(i) {
-              return typeof i === 'string' ?
-                parseFloat(i.replace(/[^0-9.-]+/g,"")) || 0 :
-                typeof i === 'number' ? i : 0;
+              return typeof i === 'string' ? parseFloat(i.replace(/[^0-9.-]+/g,"")) || 0 : typeof i === 'number' ? i : 0;
             };
-
-            // Format RM
             let formatRM = new Intl.NumberFormat('ms-MY', { style: 'currency', currency: 'MYR' }).format;
 
-            // Column index: sesuaikan dengan CSV
-            let nettTotal = api.column(5, { page: 'current' }).data().reduce((a, b) => parseValue(a) + parseValue(b), 0);
-            let gstTotal = api.column(6, { page: 'current' }).data().reduce((a, b) => parseValue(a) + parseValue(b), 0);
-            let totalTotal = api.column(7, { page: 'current' }).data().reduce((a, b) => parseValue(a) + parseValue(b), 0);
+            let nettTotal = api.column(5, { page: 'current' }).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
+            let gstTotal = api.column(6, { page: 'current' }).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
+            let totalTotal = api.column(7, { page: 'current' }).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
 
             $(api.column(5).footer()).html(formatRM(nettTotal));
             $(api.column(6).footer()).html(formatRM(gstTotal));
@@ -120,7 +116,7 @@
         // Global search placeholder
         $('#assetTable_filter input').attr('placeholder', 'Cari aset...');
 
-        // Dropdown filter untuk Kategori & Tahun
+        // Dropdown filter ikut Jenis Aset (contoh: column 1 = Jenis Aset)
         table.columns([1,2]).every(function() {
           let column = this;
           let select = $('<select><option value="">All</option></select>')
