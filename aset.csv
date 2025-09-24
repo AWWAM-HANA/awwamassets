@@ -1,0 +1,6 @@
+Asset,CODE,DATE,ITEM,DETAIL/SPECIFICATION,UNIT,NETT PRICE,GST,TOTAL,RATE,DEPR.,ACC. DEPR 2017,ACC. DEPR 2018,ACC. DEPR 2019,NBV 2019,SERIAL NO / PO NO,REMARKS
+Building,AWN/BDG/000001,20/5/2014,1 1/2 Storey Terrace Factories,"No. 176, Jalan S2 C9, Seksyen C, Green Technology Park, Seremban 2, 70300 Seremban, Negeri Sembilan, DK",1,"763,610.00", -   ,"763,610.00",2%,"15,272.20","53,452.70","68,724.90","83,997.10","679,612.90",PO124,Good condition
+Printer,AS002,1/3/2024,HP LaserJet,"Monochrome, Network",1,1200,0,1200,10%,120,120,240,360,840,PO124,Good condition
+Chair,AS003,20/5/2024,Office Chair,"Leather, Black",2,500,0,1000,10%,100,100,200,300,700,PO125,New
+Projector,AS004,10/7/2024,Epson X200,"HDMI, 3000 Lumens",1,2500,0,2500,15%,375,375,750,1125,1375,PO126,Lamp need replace
+Aircond,AS005,5/8/2024,Daikin Split,1.5HP Inverter,3,1800,0,5400,10%,540,540,1080,1620,3780,PO127,Serviced
