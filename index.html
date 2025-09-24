@@ -1,121 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Senarai Aset</title>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
-  <style>
-    body { font-family: Arial, sans-serif; margin:20px; background:#f9f9f9; }
-    h1 { text-align:center; color:#333; }
-    h3 { text-align:center; color:#555; margin-top:0; font-weight:normal; }
-    table { width:100%; border-collapse:collapse; margin-top:10px; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.05); border-radius:8px; overflow:hidden; }
-    th { background:#00aaff; color:#000; padding:8px 12px; text-align:left; }
-    td { padding:8px 12px; border:1px solid #ddd; }
-    tfoot th { background:#f1f1f1; font-weight:bold; text-align:right; }
-    tr:nth-child(even){ background:#f9f9f9; }
-    tr:hover{ background:#ffeeba; }
-    select{ width:100%; }
-    /* hide numeric pagination buttons */
-    .dataTables_paginate .paginate_button { display: none; }
-  </style>
+<meta charset="UTF-8">
+<title>Senarai Aset</title>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+<style>
+body { font-family: Arial, sans-serif; margin:20px; background:#f9f9f9; }
+h1 { text-align:center; color:#333; }
+h3 { text-align:center; color:#555; margin-top:0; font-weight:normal; }
+table { width:100%; border-collapse:collapse; margin-top:10px; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.05); border-radius:8px; overflow:hidden; }
+th { background:#00aaff; color:#000; padding:8px 12px; text-align:left; }
+td { padding:8px 12px; border:1px solid #ddd; }
+tfoot th { background:#f1f1f1; font-weight:bold; text-align:right; }
+tr:nth-child(even){ background:#f9f9f9; }
+tr:hover{ background:#ffeeba; }
+select{ width:100%; }
+/* hide numeric pagination buttons */
+.dataTables_paginate .paginate_button { display: none; }
+</style>
 </head>
 <body>
-  <h1>Senarai Aset Syarikat</h1>
-  <h3>Data terkini sehingga September 2025</h3>
 
-  <table id="assetTable" class="display nowrap" style="width:100%">
-    <thead></thead>
-    <tfoot>
-      <tr>
-        <th></th><th></th><th></th><th></th><th></th>
-        <th></th><th></th><th></th><th></th><th></th><th></th>
-      </tr>
-    </tfoot>
-    <tbody></tbody>
-  </table>
+<h1>Senarai Aset Syarikat</h1>
+<h3>Data terkini sehingga September 2025</h3>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+<table id="assetTable" class="display nowrap" style="width:100%">
+<thead></thead>
+<tfoot>
+<tr>
+<th></th><th></th><th></th><th></th><th></th>
+<th></th><th></th><th></th><th></th><th></th><th></th>
+</tr>
+</tfoot>
+<tbody></tbody>
+</table>
 
-  <script>
-    Papa.parse("aset.csv", {
-      download: true,
-      header: true,
-      complete: function(results) {
-        let data = results.data.filter(row => Object.values(row).some(val => val.trim() !== ""));
-        let headers = Object.keys(data[0]);
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
 
-        // Build table header
-        let thead = "<tr>"; headers.forEach(h=>thead+="<th>"+h+"</th>"); thead+="</tr>";
-        document.querySelector("#assetTable thead").innerHTML = thead;
+<script>
+Papa.parse("aset.csv", {
+  download: true,
+  header: true,
+  complete: function(results) {
+    let data = results.data.filter(row => Object.values(row).some(val => val.trim() !== ""));
+    let headers = Object.keys(data[0]);
 
-        // Build table body
-        let rows = "";
-        data.forEach(row=>{
-          rows+="<tr>";
-          headers.forEach(h=>{
-            if(["NETT PRICE","GST","TOTAL","DEPR","ACC DEPR","NBV"].includes(h)){
-              let val=parseFloat(row[h].replace(/,/g,''))||0;
-              rows+="<td>"+new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format(val)+"</td>";
-            }else rows+="<td>"+(row[h]||"")+"</td>";
-          });
-          rows+="</tr>";
+    // Build header
+    let thead = "<tr>"; headers.forEach(h=>thead+="<th>"+h+"</th>"); thead+="</tr>";
+    document.querySelector("#assetTable thead").innerHTML = thead;
+
+    // Build body
+    let rows = "";
+    data.forEach(row=>{
+      rows+="<tr>";
+      headers.forEach(h=>{
+        if(["NETT PRICE","GST","TOTAL","DEPR","ACC DEPR","NBV"].includes(h)){
+          let val=parseFloat(row[h].replace(/,/g,''))||0;
+          rows+="<td>"+new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format(val)+"</td>";
+        } else rows+="<td>"+(row[h]||"")+"</td>";
+      });
+      rows+="</tr>";
+    });
+    document.querySelector("#assetTable tbody").innerHTML=rows;
+
+    // Initialize DataTable
+    let table=$('#assetTable').DataTable({
+      dom:'Bfrtip',
+      buttons:['copy','csv','excel','pdf','print'],
+      scrollX:true,
+      fixedHeader:true,
+      pageLength:100,
+      lengthMenu:[[50,100,500,1000],[50,100,500,1000]],
+      paging:true,
+      pagingType:'simple',
+      language: { info: "Showing _MENU_ of _TOTAL_ entries" },
+      footerCallback:function(row,data,start,end,display){
+        let api=this.api();
+        let parseValue=i=>typeof i==='string'?parseFloat(i.replace(/[^0-9.-]+/g,''))||0:typeof i==='number'?i:0;
+        let formatRM=new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format;
+        let cols=[5,6,7,8,9,10];
+        cols.forEach(idx=>{
+          let sum=api.column(idx,{page:'current'}).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
+          $(api.column(idx).footer()).html(formatRM(sum));
         });
-        document.querySelector("#assetTable tbody").innerHTML=rows;
-
-        // Initialize DataTable
-        let table=$('#assetTable').DataTable({
-          dom:'Bfrtip',
-          buttons:['copy','csv','excel','pdf','print'],
-          scrollX:true,
-          fixedHeader:true,
-          pageLength:50,
-          lengthMenu:[[50,100,500,1000],[50,100,500,1000]],
-          paging:true,
-          pagingType:'simple',
-          language: {
-            info: "Showing _MENU_ of _TOTAL_ entries" // _MENU_ = dropdown
-          },
-          footerCallback:function(row,data,start,end,display){
-            let api=this.api();
-            let parseValue=i=>typeof i==='string'?parseFloat(i.replace(/[^0-9.-]+/g,''))||0:typeof i==='number'?i:0;
-            let formatRM=new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format;
-            let cols=[5,6,7,8,9,10];
-            cols.forEach(idx=>{
-              let sum=api.column(idx,{page:'current'}).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
-              $(api.column(idx).footer()).html(formatRM(sum));
-            });
-            api.columns.adjust();
-          }
-        });
-
-        // Global search placeholder
-        $('#assetTable_filter input').attr('placeholder','Cari aset...');
-
-        // Dropdown filter Asset Name (column 0)
-        table.columns([0]).every(function(){
-          let column=this;
-          let select=$('<select><option value="">All</option></select>')
-            .appendTo($(column.header()).empty())
-            .on('change',function(){
-              let val=$.fn.dataTable.util.escapeRegex($(this).val());
-              column.search(val?'^'+val+'$':'',true,false).draw();
-              table.columns.adjust();
-            });
-          column.data().unique().sort().each(d=>{if(d)select.append('<option value="'+d+'">'+d+'</option>');});
-        });
-
-        table.columns.adjust();
+        api.columns.adjust();
       }
     });
-  </script>
+
+    // Global search placeholder
+    $('#assetTable_filter input').attr('placeholder','Cari aset...');
+
+    // Dropdown filter Asset Name (column 0)
+    table.columns([0]).every(function(){
+      let column=this;
+      let select=$('<select><option value="">All</option></select>')
+        .appendTo($(column.header()).empty())
+        .on('change',function(){
+          let val=$.fn.dataTable.util.escapeRegex($(this).val());
+          column.search(val?'^'+val+'$':'',true,false).draw();
+          table.columns.adjust();
+        });
+      column.data().unique().sort().each(d=>{if(d)select.append('<option value="'+d+'">'+d+'</option>');});
+    });
+
+    table.columns.adjust();
+  }
+});
+</script>
+
 </body>
 </html>
