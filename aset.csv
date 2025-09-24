@@ -1,6 +1,729 @@
-Asset,CODE,DATE,ITEM,DETAIL/SPECIFICATION,UNIT,NETT PRICE,GST,TOTAL,RATE,DEPR.,ACC. DEPR 2017,ACC. DEPR 2018,ACC. DEPR 2019,NBV 2019,SERIAL NO / PO NO,REMARKS
-Building,AWN/BDG/000001,20/5/2014,1 1/2 Storey Terrace Factories,"No. 176, Jalan S2 C9, Seksyen C, Green Technology Park, Seremban 2, 70300 Seremban, Negeri Sembilan, DK",1,"763,610.00", -   ,"763,610.00",2%,"15,272.20","53,452.70","68,724.90","83,997.10","679,612.90",PO124,Good condition
-Printer,AS002,1/3/2024,HP LaserJet,"Monochrome, Network",1,1200,0,1200,10%,120,120,240,360,840,PO124,Good condition
-Chair,AS003,20/5/2024,Office Chair,"Leather, Black",2,500,0,1000,10%,100,100,200,300,700,PO125,New
-Projector,AS004,10/7/2024,Epson X200,"HDMI, 3000 Lumens",1,2500,0,2500,15%,375,375,750,1125,1375,PO126,Lamp need replace
-Aircond,AS005,5/8/2024,Daikin Split,1.5HP Inverter,3,1800,0,5400,10%,540,540,1080,1620,3780,PO127,Serviced
+ Asset  	 CODE 	DATE	ITEM	DETAIL/SPECIFICATION	UNIT	 NETT PRICE 	 GST/SST 	 TOTAL 	RATE	 DEPRECIATION 	" ACC. DEPRECIATION
+2017 "	" ACC. DEPRECIATION
+2018 "	" ACC. DEPRECIATION
+2019 "	" ACC. DEPRECIATION
+2020 "	" ACC. DEPRECIATION
+2021 "	" ACC. DEPRECIATION
+2022 "	" ACC. DEPRECIATION
+2023 "	" ACC. DEPRECIATION
+2024 "	 NBV 2024 	 SERIAL NO / PO NO 	 REMARKS 	
+Building	AWN/BDG/000001	20/5/2014	"1 1/2 Storey Terrace Factories
+
+q No. 176, Jalan S2 C9, Seksyen C, Green Technology Park, Seremban 2, 70300 Seremban, Negeri Sembilan, DK"		1	763,610.00	 -   	763,610.00	2%	15,272.20	53,452.70	68,724.90	83,997.10						679,612.90			
+Building	AWN/BDG/000002	1/9/2014	"2 Storey Shop Office
+
+q No 55, Jalan S2 B18, Pusat Dagangan Seremban 2,
+70300 Seremban, Negeri Sembilan"		1	987,839.00	 -   	987,839.00	2%	19,756.78	65,855.16	85,611.94	105,368.72						882,470.28			
+Building	AWN/BDG/000003	2017/2018	"1-3 Storey Link Industrial Building, Gravitas
+
+q No.11, Jalan 22/6, Seksyen 22, Shah Alam, Selangor"		1	2,584,000.00	 -   	2,584,000.00	2%	51,680.00	 -   		51,680.00						2,532,320.00			
+Building	AWN/BDG/000004	20/6/2019	"Single Storey Terrace House
+
+q No. 978, Jalan S2 G19, Garden Avenue, 70300 Seremban, Negeri Sembilan"		1	230,000.00	 -   	230,000.00	2%	4,600.00	 -   	 -   	2,300.00						227,700.00			
+Freehold Land	AWM/LND/000001	16/8/2013	Green Technology Park	" PT 8606, Green Technology Park,
+Seremban 2, 70300 Seremban, Negeri Sembilan, DK "		485,260.00		485,260.00		 -   	 -   	 -   							485,260.00			
+Motor vehicle	AWM/VHC/000001	26/11/2012	Toyota Hilux 2.5G Auto	WXS 217	1	99,326.00	 -   	99,326.00	20%	19,865.20	99,326.00	99,325.00	99,325.00						1		 SETTLEMENT : 22/07/2019 (RM 75,710.45) 	
+Motor vehicle	AWM/VHC/000003	16/12/2014	Ford Ranger	WA 417 X	1	96,388.00	 -   	96,388.00	20%	19,277.60	57,832.80	77,110.40	96,387.00						1			
+Motor vehicle	AWM/VHC/000004	6/7/2015	Proton Iriz	BNJ 917	1	53,952.57	 -   	53,952.57	20%	10,790.51	26,077.08	36,867.59	47,658.11						6,294.46			
+Motor vehicle	AWM/VHC/000007	5/11/2018	Peugeot 3008 SUV	MDC 717	1	146,790.75		146,790.75	20%	29,358.15	 -   	4,893.03	34,251.18						112,539.58			
+Motor vehicle	AWM/VHC/000008	6/2/2019	Proton X70 Executive 1.8 TGDi	CED 517	1	108,470.30		108,470.30	20%	21,694.06	 -   	 -   	18,078.38						90,391.92			
+Motor vehicle	AWM/VHC/000009	31/5/2019	Volkswagen Tiguan	WUV317	1	53,000.00		53,000.00	20%	10,600.00	 -   	 -   	6,183.33						46,816.67		 SETTLEMENT : 22/07/2019 (RM 25,228.96 	
+Motor vehicle	AWM/VHC/000010	31/5/2019	Mercedez Benz	WXS617	1	15,000.00		15,000.00	20%	3,000.00	 -   	 -   	1,750.00						13,250.00		 SETTLEMENT : 22/07/2019 (RM 75,710.45) 	
+Digital projector	AWM/PJT/000001	18/10/2009	Projector	DLP Projector-Acer	1	1,899.00		1,899.00	10%	189.9	1,710.14	1,898.00	1,898.00						1		 BILIK MEETING 	
+Digital projector	AWM/PJT/000002		LCD Projector		1	1,644.00		1,644.00	20%	328.8	1,643.00	1,643.00	1,643.00						1		 DALAM BILIK DOC 154-1 	
+Digital projector	AWM/PJT/000003	5/9/2014	Projector 	Acer LCD Projector, P1283 DLP, XGA, 3000LM	1	1,550.00		1,550.00	10%	155	620	775	930						620		 CEPSWAM 	
+Digital projector	AWM/PJT/000004	11/12/2015	Projector & Bracket		1	1,910.00		1,910.00	20%	382	764	1,146.00	1,528.00						382		CENTRI0 55-1	
+Digital projector	AWM/PJT/000005	28/4/2015	Projector 	Optoma 	1	1,226.42	73.58	1,300.00	20%	245.28	654.08	899.36	1,144.65						81.77		CENTRIO 55-G	
+Digital projector	AWM/PJT/000006	19/11/2016	Projector	Acer X127H DLP XGA 3600LM ACS/ASSSB 1920 *1200 16:9 2000:15000 Lamp	1	1,490.57	89.43	1,580.00	20%	298.11	322.96	621.07	919.19						571.38		CEPSWAM	
+Digital projector	AWM/PJT/000007	2/12/2016	Projector	Acer P1185SVGA 3200 ANSI 20000:1 HD+DMIINPUT 	1	1,500.00	90	1,590.00	20%	300	325	625	925						575		CEPSWAM	
+Digital projector	AWM/PJT/000008	28/3/2018	Projector	ACER X1223H DLP XGA 3600LM 	1	1,490.57	89.43	1,580.00	20%	298.11	 -   	223.59	521.7						968.87	 S/N: MRJP1100K747025908400 	 BILIK MEETING 	
+Computer	AWM/CMR/000001	30/4/2011	Canon Camcoder 	"Legria HF R18EDC 7.4V
+Made In Japan"	1	1,989.00		1,989.00	20%	397.8	1,988.00	1,988.00	1,988.00						1	 SN: (21) 183042210025 		
+Computer	AWM/CMR/000002	25/12/2011	DSLR Camera	Canon EOS 550D 18-135MM	1	3,119.00		3,119.00	20%	623.8	3,118.00	3,118.00	3,118.00						1	2233331200	2233331200	
+Computer	AWN/SFT/000001	11/4/2014	Software - Payroll	Sage 	1	1,988.00		1,988.00	20%	397.6	1,590.40	1,987.00	1,987.00						1			
+Computer	AWN/SFT/000002	11/4/2014	Software	 Autocount	1	2,188.00		2,188.00	20%	437.6	1,750.40	2,187.00	2,187.00						1			
+Computer	AWN/SFT/000003	25/8/2014	Software	 Autocount	1	1,400.00	84	1,484.00	20%	280	653.33	933.33	1,213.33						186.67			
+Computer	AWN/SFT/000004	20/1/2015	Software 	Microsoft		8,000.00		8,000.00	20%	1,600.00	4,666.67	6,266.67	7,866.67						133.33			
+Computer	AWN/SFT/000005	21/12/2015	Software	Microsoft Office Small Pro Edition	1	530		530	20%	106	212	318	424						106			
+Computer	AWN/SFT/000006	3/3/2017	Software	Microsoft Office 2010	1	1,090.00		1,090.00	20%	218	181.67	290.67	508.67						581.33		 Hosnas Solution  	
+Computer	AWN/SFT/000007	11/1/2018	Software	Microsoft Office 2010 	5 User	2,588.75		2,588.75	20%	517.75	 -   	517.75	1,035.50						1,553.25		 Hosnas Solution  	
+Computer	AWN/SFT/000008	8/3/2018	Software	Microsoft Office 2010 	7 User	3,624.25		3,624.25	20%	724.85	 -   	543.64	1,268.49						2,355.76		 Hosnas Solution  	
+Computer	AWN/SFT/000009	4/4/2018	Software	SAGE UBS 2015 ACCOUNTING	1	4,800.68	299.32	5,288.00	20%	960.14	 -   	640.09	1,600.23						3,200.45		 96 SOFTWARE SDN BHD 	
+Computer	AWN/SFT/000010	1/8/2019	Software	Microsoft Office 2010 	1 User	545	 -   	545	20%	109		 -   	36.33						508.67		 Hosnas Solution  	
+Computer	AWN/SFT/000011	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWN/SFT/000012	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWN/SFT/000013	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWN/SFT/000014	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWN/SFT/000015	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWN/SFT/000016	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWN/SFT/000017	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWN/SFT/000018	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWN/SFT/000019	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWN/SFT/000020	16/1/2019	Software	Microsoft Office 2016 Pro 	1	400	 -   	400	20%	80									400		 Hosnas Solution  	
+Computer	AWM/CPT/000001		Computer			1,700.00		1,700.00	20%	340	1,699.00	1,699.00	1,699.00						1			
+Computer	AWM/CPT/000002		LCD SCREEN			400		400	20%	80	399	399	399						1			
+Computer	AWM/CPT/000003	18/10/2009	Computer	HP Pavilion 		2,796.00		2,796.00	20%	559.2	2,795.00	2,795.00	2,795.00						1			
+Computer	AWM/CPT/000004	31/12/2010	Computer	Emachine Computer		1,599.00		1,599.00	20%	319.8	1,598.00	1,598.00	1,598.00						1			
+Computer	AWM/CPT/000005	27/12/2010	Laptop	Notebook Vaio		7,799.00		7,799.00	20%	1,559.80	7,798.00	7,798.00	7,798.00						1			
+Computer	AWM/CPT/000006	21/3/2014	Laptop	Acer Notebook E1-410		1,468.00		1,468.00	20%	293.6	1,174.00	1,467.00	1,467.00						1			
+Computer	AWM/CPT/000007	10/4/2014	Computer	Acer K202HQLB 19.5" 		2,067.00		2,067.00	20%	413.4	1,653.60	2,066.00	2,066.00						1	 S/N: ETQ400C00204701EE74031 	PRINTING (154-G)	
+Computer	AWM/CPT/000008	10/4/2014		ACER K202HQLB 19.5" LED MONITOR		2,067.00		MMT0CSS001400F6E88500 (NADIA)	20%	413.4	1,653.60	2,066.00	2,066.00						1	S/N : MMT0CSS0014100F6E88500	NOOR NADIA AHYAR (154-2)	
+Computer	AWM/CPT/000009	13/5/2014	LED Monitor	Acer K192HQLB 18"5 LED Monitor 		830		830	20%	166	664	829	829						1	 S/N: MMT0ASS00340709B944200-1 	 NOOR MAZLINA AHYAR (154-2) 	
+Computer	AWM/CPT/000010	5/9/2014	Computer	Acer Computer,ACERAZC606-1900W8-INTELCELERONJ1900		1,299.00		1,299.00	20%	259.8	779.4	1,039.20	1,298.00						1	 S/N: DQSURSM0014270089B6300 	HANA NAZATUL AKHMA (154-2)	
+Computer	AWM/CPT/000011	22/12/2014	Computer	ACER-AZ1601-2940W8-INTELCLERONN2940-1.83GHZ,2GBR3,500GB,18.5"TFT,W8.1BING	1	1,180.00		1,180.00	20%	236	944	1,179.00	1,179.00						1	 S/N: DQSYESM001447003496B01 	MUHAMMAD AMIR IIMRAN (154-G)	
+Computer	AWM/CPT/000012		Computer	ACER-AZ1601-2940W8-INTELCLERONN2940-1.83GHZ,2GBR3,500GB,18.5"TFT,W8.1BING	1	1,180.00		1,180.00	20%	236	944	1,179.00	1,179.00						1	 S/N: DQSYESM001447002DD6B01 	NORA SALWATI (154-G_	
+Computer	AWM/CPT/000013		Computer	ACER-AZ1601-2940W8-INTELCLERONN2940-1.83GHZ,2GBR3,500GB,18.5"TFT,W8.1BING	1	1,180.00		1,180.00	20%	236	944	1,179.00	1,179.00						1	 S/N: DQSYESM0014470038E6B01 	ALLUSER (154-2)	
+Computer	AWM/CPT/000014	5/12/2014	Computer	Desktop Acer Computer, ACERAZC606-1900W8-INTELCELERONJ1900	1	1,270.00		1,270.00	20%	254	1,016.00	1,269.00	1,269.00						1	  S/N: DQSURSM0014310034C6300 	NUR SYAHIRAH IDRIS (154-G)	
+Computer	AWM/CPT/000015		Computer	Desktop Acer Computer, ACERAZC606-1900W8-INTELCELERONJ1900	1	1,270.00		1,270.00	20%	254	1,016.00	1,269.00	1,269.00						1	 S/N: DQSURSM0014310034E6300 	NO USER (154-G)	
+Computer	AWM/CPT/000016		Computer	Desktop Acer Computer, ACERAZC606-1900W8-INTELCELERONJ1900	1	1,270.00		1,270.00	20%	254	1,016.00	1,269.00	1,269.00						1	 S/N: DQSURSM0014310035E6300 	NO USER (154-2)	
+Computer	AWM/CPT/000017		Computer	Desktop Acer Computer, ACERAZC606-1900W8-INTELCELERONJ1900	1	1,270.00		1,270.00	20%	254	1,016.00	1,269.00	1,269.00						1	 S/N: DQSURSM001431003646300 	NUR SUHAILA (154-2)	
+Computer	AWM/CPT/000018		Computer	Desktop Acer Computer, ACERAZC606-1900W8-INTELCELERONJ1900	1	1,270.00		1,270.00	20%	254	1,016.00	1,269.00	1,269.00						1	 S/N: DQSURSM001436014FE6300 	MOHD SHAHMI SYAZWI (154-2)	
+Computer	AWM/CPT/000019	17/5/2015	Laptop	ACER ASPIRE NOTEBOOK E5-473-335F	1	1,517.92	91.08	1,609.00	20%	303.58	758.96	1,062.54	1,366.13						151.79	 S/N: NXMXQSM00151808B203400 		
+Computer	AWM/CPT/000020		Laptop	ACER ASPIRE NOTEBOOK E5-473-335F	1	1,517.92	91.08	1,609.00	20%	303.58	758.96	1,062.54	1,366.13						151.79	 S/N: NXMXQSM00151808B203400 		
+Computer	AWM/CPT/000021	18/11/2015	Computer	ACER REVO ONE RL85 MINI DESKTOP	1	2,781.13	166.87	2,948.00	20%	556.23	1,112.45	1,668.68	2,224.90						556.23	 S/N: DTSYYSM002536003816300 	AHYAR IDRIS (154-1)	
+Computer	AWM/CPT/000022	18/11/2015	Computer	ACER ASPIRE Z1-611 DESKTOP	1	1,697.17	101.83	1,799.00	20%	339.43	678.87	1,018.30	1,357.74						339.43	 S/N: DQSZOSM00254200F6D3000 - 	NO USER (154-1)	
+Computer	AWM/CPT/000023	18/11/2015	Computer	ACER ASPIRE Z1-611 DESKTOP	1	1,697.17	101.83	1,799.00	20%	339.43	678.87	1,018.30	1,357.74						339.43	 S/N: DQSZOSM00254200F763000 -  	NOOR ROZIANA AHYAR (154-1)	
+Computer	AWM/CPT/000024	19/1/2016	Computer	Acer Aspire Z1-611 -2900W10 Dekstop	1	1,697.17	101.83	1,799.00	20%	339.43	678.87	1,018.30	1,357.74						339.43	 S/N: DQSZOSM0025520280E300 	 HANA SHAZLEEN FAUZI (154-2) 	
+Computer	AWM/CPT/000025	1/3/2017	Computer	"HP AIO PC 20c042d
+"	1	1,414.15	84.85	1,499.00	20%	282.83	235.69	518.52	801.35						612.8	 S/N: 8CC6471688 	 IZYAN IZZATI ZULKEFLI (154-2) 	
+Computer	AWM/CPT/000026	19/1/2018	Computer	HP AIO PC 20c042d	1	1,697.17	101.83	1,799.00	20%	339.43	 -   	339.43	678.87						1,018.30	  S/N: 8CC7450GSC 	 BADRIYAH ISHAK (154-G) 	
+Computer	AWM/CPT/000027	10/1/2018	CPU	"DELL OPTIPLEX 990
+-INTEL CORE i5-2500S 2.7Ghz"	1	689	 -   	689	20%	137.8	 -   	137.8	275.6						413.4		 MOHAMAD DANIEL AHYAR (1541) 	
+Computer	AWM/LAB/CPT/000011	8/3/2018	Computer	HP-20-C042D-INTELPENTIUMJ3/10-1.6GHZ,4GBR31600SODIMM,500GB,W1064,19.5"WLED	1	1,603.77	96.23	1,700.00	20%	320.75	 -   	240.57	561.32						1,042.45	 S/N: 8CC8051MK2- 	MULIATI ISHAK (154-2)	
+Computer	AWM/CPT/000028	30/3/2018	Laptop	ACER-E5-4/5-354E-GREY-INTELCORE13-6006,4GBR4,1TB,14"LED,W1064	1	1,508.49	90.51	1,599.00	20%	301.7	 -   	201.13	502.83						1,005.66	 S/N: NXGCUSM0028051B21B7600 	 Meeting Room	
+Computer	AWM/CPT/000029	27/7/2019	Laptop	HP-PAV13AN0056TU-GOLDINTEL	1	3,850.00	90.51	1,599.00	20%	770			320.83						3,529.17	 S/N : 5cd90899hy 		
+Computer	AWM/CPT/000030	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG9471YTB 	 Hosnas Solution  	
+Computer	AWM/CPT/000031	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG946850N 	 Hosnas Solution  	
+Computer	AWM/CPT/000032	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG94685D5 	 Hosnas Solution  	
+Computer	AWM/CPT/000033	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG9471X27 	 Hosnas Solution  	
+Computer	AWM/CPT/000034	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG9471Y7D 	 Hosnas Solution  	
+Computer	AWM/CPT/000035	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG94684ZQ 	 Hosnas Solution  	
+Computer	AWM/CPT/000036	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG94685RL 	 Hosnas Solution  	
+Computer	AWM/CPT/000037	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG946850M 	 Hosnas Solution  	
+Computer	AWM/CPT/000038	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG9471YT8 	 Hosnas Solution  	
+Computer	AWM/CPT/000039	16/1/2020	LAPTOP	"HP NOTEBOOK - INTEL
+* MEMORY 4GB DDR4
+STORAGE 256GB
+-FOC BAG
+-FOC MOUSE"	1	1,300.00	 -   	1,300.00	20%	260									1,300.00	 S/N : 5CG9471YM4 	 Hosnas Solution  	
+						66,586.06	1,118.44	63,295.99	8	13,317.21	33,028.27	39,924.33	44,068.17						22,517.89			
+																						
+	8. PRINTER																					
+	 CODE 	DATE	ITEM	DETAIL/SPECIFICATION	UNIT	 NETT PRICE 	 GST 	 TOTAL 	RATE	 DEPR. 	" ACC. DEPR
+2017 "	" ACC. DEPR
+2018 "	" ACC. DEPR
+2019 "						 NBV 2019 	 SERIAL NO / PO NO 	 REMARKS 	
+Computer	AWM/PTR/000001		Printer*			1,507.00		1,507.00	20%	301.4	1,506.00	1,506.00	1,506.00						1			
+Computer	AWM/PTR/000002	15/8/2010	HP Deskjet Printer	F2480 AIO PRINTER		183		183	20%		182	182	182						1			
+Computer	AWM/PTR/000003	5/11/2012	Printer	Canon E600		448		448	20%	89.6	447	447	447						1		 154-1 	
+Computer	AWM/PTR/000004	15/8/2012	Fax	Canon Laser Fax L170		1,165.00		1,165.00	20%	233	1,106.75	1,164.00	1,164.00						1		154-2	
+Computer	AWM/PTR/000005	5/12/2014	Laser Printer 	HP Laser Pro 400 MFPDW 		2,730.00		2,730.00	20%	546	2,184.00	2,729.00	2,729.00						1		 154-2 	
+Computer	AWM/PTR/000006	13/5/2014	Epson Printer 	LQ310 Dot Matrix Printer -R9DY050203-1		550		550	20%	110	440	549	549						1		 FINANCE 	
+Computer	AWM/PTR/000007	30/9/2017	Deskjet Printer	HP GT 5820 DESKJET AIO PRINTER		659		659	20%	131.8	32.95	164.75	296.55						362.45		 154-1 	
+Computer	AWM/PTR/000008	12/7/2018	Epson Printer 	LW-700 LABEL PRINTER		540		540	20%	108	 -   	45	153						387			
+Computer	AWM/PTR/000009	8/2/2019	Epson Printer 	L18000 Printer		1,900.00		1,900.00	20%	380			316.67						1,583.33	 S/N: UBLY036964 		
+Computer	AWM/PTR/000010	26/7/2019	Brother Printer	DCP-T510W		499		499	20%	99.8			41.58						457.42	 E78664F9H383817 		
+								 NO . 154 														
+Furniture and fittings	AWM/FNF/000001	*	Furniture & Fittings*			1,900.00		1,900.00	10%	190	1,710.00	1,899.00	1,899.00						1			
+Furniture and fittings	AWM/FNF/000002	2/3/2013	Chair*	Conference Chair Model 2/8 Blue		1,000.00		1,000.00	20%	200	999	999	999						1			
+Furniture and fittings	AWM/FNF/000003	*	Carpet*			2,470.00		2,470.00	10%	247	988	1,235.00	1,482.00						988			
+Furniture and fittings	AWM/FNF/000004	*	Carpet*			500		500	10%	50	200	250	300						200			
+Furniture and fittings	AWM/FNF/000005	2/12/2014	4 Unit Desk	Office Table (Standart  2.5 x 4')		169.5		169.5	10%	16.95	67.8	84.75	101.7						67.8			
+Furniture and fittings	AWM/FNF/000006			Office Table (Standart  2.5 x 4')		169.5		169.5	10%	16.95	67.8	84.75	101.7						67.8			
+Furniture and fittings	AWM/FNF/000007			Office Table (Standart  2.5 x 4')		169.5		169.5	10%	16.95	67.8	84.75	101.7						67.8			
+Furniture and fittings	AWM/FNF/000008			Office Table (Standart  2.5 x 4')		169.5		169.5	10%	16.95	67.8	84.75	101.7						67.8			
+Furniture and fittings	AWM/FNF/000009		4 Unit Pedestal	Office Pedestal (Mobile Pedestal)		150		150	10%	15	60	75	90						60			
+Furniture and fittings	AWM/FNF/000010			Office Pedestal (Mobile Pedestal)		150		150	10%	15	60	75	90						60			
+Furniture and fittings	AWM/FNF/000011			Office Pedestal (Mobile Pedestal)		150		150	10%	15	60	75	90						60			
+Furniture and fittings	AWM/FNF/000012			Office Pedestal (Mobile Pedestal)		150		150	10%	15	60	75	90						75			
+Furniture and fittings	AWM/FNF/000015		 Chair	Office Chair (Neco Chair) 		150		150	10%	15	60	75	90						75			
+Furniture and fittings	AWM/FNF/000016			Office Chair (Neco Chair) 		150		150	10%	15	60	75	90						75			
+Furniture and fittings	AWM/FNF/000017	12/9/2015	Conference Table 	Executive Conference Table		505		505	10%	50.5	117.83	168.33	218.83						336.67			
+Furniture and fittings			Conference Table 			504.12		504.12	10%	50.41	109.22	159.63	210.04						344.49			
+Furniture and fittings	AWM/FNF/000018	12/8/2015	2 Units Chair - Bench			320		320	10%	32	74.67	106.67	138.67						213.33			
+Furniture and fittings	AWM/FNF/000019		Curtains			471.7		471.7	10%	47.17	98.27	145.44	192.61						326.26			
+Furniture and fittings	AWM/FNF/000020	23/9/2015	Carpet			10,800.00		10,800.00	10%	1,080.00	2,430.00	3,510.00	4,590.00						7,290.00			
+Furniture and fittings	AWM/FNF/000037	30/8/2016	Furniture	Apex Standard Desk 2.5' WK-YH1500 5inc		771.68		771.68	10%	77.17	102.89	180.06	257.23						591.62			
+Furniture and fittings	AWM/FNF/000038	30/8/2016	Furniture	Apex YH Mobile Pedestal		584.7		584.7	10%	58.47	77.96	136.43	194.9						448.27			
+Furniture and fittings	AWM/FNF/000039	25/8/2016	Carpet-154-1 & 2			11,250.00		11,250.00	10%	1,125.00	1,500.00	2,625.00	3,750.00						8,625.00		 Invoice 33 	
+Furniture and fittings	AWM/FNF/000041	8/11/2016	Furniture	Apex Presidential Highback Chair-4 Units		860.38	51.62	912	10%	86.04	100.38	186.42	272.45						673.96			
+Furniture and fittings	AWM/FNF/000042	8/11/2016	Furniture	Apex Steel 4 Drawers Filling Cabinet-1 Unit		235.85	14.15	250	10%	23.59	27.52	51.1	74.69						184.75			
+Furniture and fittings	AWM/FNF/000043-46	20/3/2017	4 Unit Cabinet	Apex SB Side Cabinet WK-SBE22 (1000W X 450D X 730H) MM		1,132.08	67.92	1,200.00	10%	113.21	28.3	141.51	254.72						990.57			
+Furniture and fittings	AWM/FNF/000047	20/3/2017	Drawer	Apex Steel 4 Drawers Filling Cabinet-1 Unit		273.59	16.42	290.01	10%	27.36	6.84	34.2	61.56						239.39			
+Furniture and fittings	AWM/FNF/000048	20/3/2017	Meeting Table  - Apex YH Meeting Table 	WK-YH0C9118 (1800W X 900D X 760H) MM		377.35	22.64	399.99	10%	37.74	9.43	47.17	84.9						330.18			
+Furniture and fittings	AWM/FNF/000049	10/10/2018	Cabinet File	HH MC 7003	1	1,000.00		1,000.00	10%	100		16.67	116.67						983.33			
+Furniture and fittings	AWM/FNF/000050	28/2/2019	Chair Banquet (EPOXY)	Leg Black, Body Blue	65	3,568.50		3,568.50	10%	356.85			356.85						3,568.50			
+Furniture and fittings	AWM/FNF/000051		Chair		1	138	8.28	146.28	10%	13.8			13.8						138	 Wawasan Office 		
+Furniture and fittings	AWM/FNF/000052		Chair		1	138	8.28	146.28	10%	13.8			13.8						138			
+Furniture and fittings						40,378.95	189.32	40,568.27	3.2	4,137.90	9,211.51	12,680.62	16,428.52						27,288.53			
+Furniture and fittings								 NO . 55 														
+Furniture and fittings	AWM/FNF/000021	6/3/2015	Furniture	Table- Foldable Table 2 x 6' - 7 Unit		686		686	10%	68.6	188.65	257.25	325.85						428.75			
+Furniture and fittings	AWM/FNF/000022	6/3/2015	Furniture	Chair- Apex Banquet - 20unit		960		960	10%	96	264	360	456						600			
+Furniture and fittings	AWM/FNF/000023	26/11/2015	Furniture	Chair- Apex Banquet - 33 unit		1,584.00		1,584.00	10%	158.4	316.8	475.2	633.6						1,108.80			
+Furniture and fittings	AWM/FNF/000024	26/11/2015	Furniture	Table- Foldable Table 2 x 6' - 18 unit		1,764.00		1,764.00	10%	176.4	352.8	529.2	705.6						1,234.80			
+Furniture and fittings	AWM/FNF/000025	26/11/2015	Furniture	Table- Foldable Round Table - 4Unit		1,400.00		1,400.00	10%	140	280	420	560						980			
+Furniture and fittings	AWM/FNF/000026	26/11/2015	Furniture	Wall Electric Screen 8' x 8'		901		901	10%	90.1	180.2	270.3	360.4						630.7			
+Furniture and fittings	AWM/FNF/000027	22/12/2015	Chair Cover Banquet**	Deposit 2015		678.4		678.4	10%	67.84	135.68	203.52	271.36						474.88			
+Furniture and fittings	AWM/FNF/000028	31/12/2015	Curtains			1,633.00		1,633.00	10%	163.3	326.6	489.9	653.2						1,143.10			
+Furniture and fittings	AWM/FNF/000029	31/12/2015	Cloth-Training Table			1,102.83		1,102.83	10%	110.28	220.57	330.85	441.13						771.98			
+Furniture and fittings	AWM/FNF/000030	5/12/2015	Curtains-No.55			1,731.00		1,731.00	10%	173.1	346.2	519.3	692.4						1,211.70			
+Furniture and fittings	AWM/FNF/000031	23/12/2015	Cloth-Training Table			1,169.00		1,169.00	10%	116.9	233.8	350.7	467.6						818.3			
+Furniture and fittings	AWM/FNF/000032	6/1/2016	Chair Cover Banquet**	Balance 2016		1,017.60		1,017.60	10%	101.76	203.52	305.28	407.04						712.32			
+Furniture and fittings	AWM/FNF/000033	4/8/2016	Chair Cover Banquet			1,600.00	96	1,696.00	10%	160	226.67	386.67	546.67						1,213.33			
+Furniture and fittings	AWM/FNF/000034	Deposit ( 5/8/2016)	Curtains-No.55	(Claim Daniel)		2,075.48		2,075.48	10%	207.55	294.03	501.57	709.12						1,573.91		 Balance ( 15/9/2016) 	
+Furniture and fittings	AWM/FNF/000035	17/8/2016	Furniture	Table- Foldable Round Table - 4Unit		1,086.29		1,086.29	10%	108.63	144.84	253.47	362.1						832.82			
+Furniture and fittings	AWM/FNF/000036	17/8/2016	Furniture	Chair- Apex Banquet - 20unit		998		998	10%	99.8	133.07	232.87	332.67						765.13			
+Furniture and fittings	AWM/FNF/000040	20/7/2016	Carpet-55-G			8,960.00		8,960.00	10%	896	1,269.33	2,165.33	3,061.33						6,794.67		 Invoice 21 	
+Furniture and fittings						29,346.60	96	29,442.60	1.7	2,934.66	5,116.75	8,051.41	10,986.07						21,295.19			
+Furniture and fittings								 NO . 978 														
+Furniture and fittings	AWM/FNF/000053	22/10/2019	"Bedroom Set 
+* Wardrobe
+*Compartment"			2,999.00			10%	299.9			299.9						2,999.00			
+Furniture and fittings	AWM/FNF/000054	22/10/2019	Cherrywood Wardrobe			390			10%	39									390			
+Furniture and fittings	AWM/FNF/000055	22/10/2019	Shin Aik Wardrobe			1,000.00			10%	100									1,000.00			
+Furniture and fittings	AWM/FNF/000056	22/10/2019	Marble Top Dining			1,999.00			10%	199.9									1,999.00			
+Furniture and fittings	AWM/FNF/000057	22/10/2019	5' Matress			1,499.00			10%	149.9									1,499.00			
+Furniture and fittings	AWM/FNF/000058	22/10/2019	3 Seater Sofa			3,899.00			10%	389.9									3,899.00			
+Furniture and fittings						11,786.00	 -   	 -   	0.6	1,178.60	 -   	 -   	299.9						11,786.00			
+Machinery	AWM/MCN/000001	3/12/2014	HIC Wire Binding Machine			800		800	20%	160	640	799	799						1			
+Machinery	AWM/MCN/000002	25/11/2015	Combinding Machine			187.74		187.74	20%	37.55	112.64	150.19	186.74						1			
+Machinery	AWM/MCN/000003	8/2/2017	HIC Wire Binding Machine	TW 2100		950	57	1,007.00	20%	190	174.17	364.17	554.17						395.83	 S/N : 0008941 	 S/N : 0008941 	
+Machinery	AWM/MCN/000004	20/3/2017	Shredder	Aurora Paper Shredder (Light Duty) AS1219CE ** Cross Cut/12 Sheets		470.75	28.25	499	20%	94.15	86.3	180.45	274.6						196.15			
+Signboard	AWM/SGB/000001	24/8/2015	Signboard Office - Lot 154			1,000.00		1,000.00	10%	100	233.33	283.33	383.33						616.67			
+Signboard	AWM/SGB/000002	24/3/2016	Signboard Office - Lot 55			1,060.00		1,060.00	10%	106	185.5	238.5	344.5						715.5			
+Signboard	AWM/SGB/000003	OCT	Signboard Office - Lot 55			1,000.00	 -   	1,000.00	10%	100			16.67						983.33			
+Books and references	AWM/BKS/000001	30/6/2016	2016 Petroleum Products, Lubricants & Fossil Fuels 05.01 (I): C1234-D3710-Print			1,865.45		1,865.45	10%	186.55	279.82	466.36	652.91						1,212.54			
+Books and references	AWM/BKS/000002		2016 Petroleum Products, Lubricants & Fossil Fuels 05.01 (II): D3711-D6122-Print			1,672.13		1,672.13	10%	167.21	250.82	418.03	585.25						1,086.88			
+Books and references	AWM/BKS/000003		2016 Petroleum Products, Lubricants & Fossil Fuels 05.01 (III): D6138-D6971-Print			1,728.48		1,728.48	10%	172.85	259.27	432.12	604.97						1,123.51			
+Equipment								 NO . 154 														
+Equipment	AWM/OEQ/000001		Office Equipment			8,250.00		8,250.00	10%	825	6,393.75	7,218.75	8,043.75						206.25			
+Equipment	AWM/OEQ/000002		Office Table			1,500.00		1,500.00	20%	300	1,499.00	1,499.00	1,499.00						1			
+Equipment	AWM/OEQ/000003		Office Chair			600		600	20%	120	599	599	599						1			
+Equipment	AWM/OEQ/000004		Meeting Table			400		400	20%	80	399	399	399						1			
+Equipment	AWM/OEQ/000005		Meeting Chair			200		200	20%	40	199	199	199						1			
+Equipment	AWM/OEQ/000006		Steel Cabinet			600		600	20%	120	599	599	599						1			
+Equipment	AWM/OEQ/000007		Steel Cabinet			400		400	20%	80	399	399	399						1			
+Equipment	AWM/OEQ/000008		Wooden Drawers		7	600		600	20%	120	599	599	599						1			
+Equipment	AWM/OEQ/000009		Wooden Cabinet			1,200.00		1,200.00	20%	240	1,199.00	1,199.00	1,199.00						1			
+Equipment	AWM/OEQ/000010		Book Rakcs-Standart Size		6	300		300	20%	60	299	299	299						1			
+Equipment	AWM/OEQ/000011		Book Rakcs-Large Size			400		400	20%	80	399	399	399						1			
+Equipment	AWM/OEQ/000012		Office Binder Machine			200		200	20%	40	199	199	199						1			
+Equipment	AWM/OEQ/000013		Paper Cutter			100		100	20%	20	99	99	99						1			
+Equipment	AWM/OEQ/000014		Office Tables			600		600	20%	120	599	599	599						1			
+Equipment	AWM/OEQ/000015		Office Chair			700		700	20%	140	699	699	699						1			
+Equipment	AWM/OEQ/000016		Glass Meeting Table			700		700	20%	140	699	699	699						1			
+Equipment	AWM/OEQ/000017		Meeting Table			400		400	20%	80	399	399	399						1			
+Equipment	AWM/OEQ/000018		Meeting Chairs			360		360	20%	72	359	359	359						1			
+Equipment	AWM/OEQ/000019		Office Equipment			2,413.70		2,413.70	20%	482.74	2,412.70	2,412.70	2,412.70						1			
+Equipment	AWM/OEQ/000020	28/7/2011	HP Blackberry Curve*			1,090.00		1,090.00	20%	218	1,089.00	1,089.00	1,089.00						1			
+Equipment	AWM/OEQ/000021	11/9/2011	Safe Box			2,199.00		2,199.00	20%	439.8	2,198.00	2,198.00	2,198.00						1			
+Equipment	AWM/OEQ/000022		Office Partition			3,300.00		3,300.00	20%	660	3,299.00	3,299.00	3,299.00						1			
+Equipment	AWM/OEQ/000023		Apex Banquet Chair			275		275	20%	55	274	274	274						1			
+Equipment	AWM/OEQ/000024	30/3/2013	Vacuum Cleaner		1	324.8		324.8	10%	32.48	227.36	259.84	292.32						32.48			
+Equipment	AWM/OEQ/000025	23/5/2013	Handphone *	Samsung Galaxy S3 Mini	1	999		999	10%	99.9	499.5	599.4	699.3						299.7			
+Equipment	AWM/OEQ/000026	29/12/2014	Vacuum Cleaner		1	344		344	10%	34.4	137.6	172	206.4						137.6			
+Equipment	AWM/OEQ/000027	20/3/2015	Keyphone			3,090.00		3,090.00	10%	309	849.75	1,158.75	1,467.75						1,622.25			
+Equipment	AWM/OEQ/000028	2/5/2015	Vacuum Cleaner	Cordless Vacuum Cleaner - Green		328		328	10%	32.8	82	114.8	147.6						180.4			
+Equipment	AWM/OEQ/000029	9/6/2015	Book shelf -	 12 compartment		148.02		148.02	10%	14.8	37	51.8	66.6						81.42			
+Equipment	AWM/OEQ/000030	31/10/2015	6 Unit Extinguish			1,380.00		1,380.00	10%	138	299	437	575						805			
+Equipment	AWM/OEQ/000031	31/11/15	CCTV			6,500.00		6,500.00	10%	650	1,332.50	1,982.50	2,632.50						3,867.50			
+Equipment	AWM/OEQ/000032	17/6/2015	Access Door Reader			1,570.00		1,570.00	10%	157	392.5	549.5	706.5						863.5			
+Equipment	AWM/OEQ/000033	31/8/2015	Toshiba External			660		660	10%	66	154	220	286						374			
+Equipment	AWM/OEQ/000034	24/2/2016	Vs Wood 	12 Shelf Pigeon Hole - 1 Unit		160	9.6	169.6	20%	32	58.67	90.67	122.67						37.33			
+Equipment	AWM/OEQ/000037	6/4/2016	Access Door Reader-154-G 			1,370.00		1,370.00	10%	137	239.75	376.75	513.75						856.25		 Deposit RM 10,710 - 60%) 	
+Equipment	AWM/OEQ/000038	29/8/2016	Book Shelf -	 12 compartments -	2	264.13	15.85	279.98	20%	52.83	70.43	123.26	176.08						88.05			
+Equipment	AWM/OEQ/000041	12/10/2016	Fingerprint Door Access			17,850.00		17,850.00	10%	1,785.00	2,231.25	4,016.25	5,801.25						12,048.75			
+Equipment	AWM/OEQ/000042	8/11/2016	Book Shelf - 	12 compartments - 1 Units	1	122.63	7.36	129.99	20%	24.53	28.61	53.14	77.66						44.97			
+Equipment	AWM/OEQ/000043	25/12/2016	Karcher Vacuum Cleaner		1	577.6	34.66	612.26	20%	115.52	122.45	237.97	353.49						224.11			
+Equipment	AWM/OEQ/000044	11/5/2017	Samsung Tab	Samsung Galaxy Tab A-Grey	1	1,036.79	62.2	1,098.99	20%	207.36	138.24	345.6	552.96						483.83	 Cert No : VC00747483 	Cert No : VC00747483	
+Equipment	AWM/OEQ/000045	11/5/2017		Samsung Galaxy Tab A-Grey	1	1,036.79	62.2	1,098.99	20%	207.36	138.24	345.6	552.96						483.83	 Cert No : VC00747484 	Cert No : VC00747484	
+Equipment	AWM/OEQ/000046	11/5/2017		Samsung Galaxy Tab A-Grey	1	1,036.79	62.2	1,098.99	20%	207.36	138.24	345.6	552.95						483.84	 Cert No : VC00747485 	Cert No : VC00747485	
+Equipment	AWM/OEQ/000047	30/5/2017	CCTV			1,730.00		1,730.00	20%	346	230.67	576.67	922.67						807.33		Penambahan bagi camera di 154-G (belakang)	
+Equipment	AWM/OEQ/000048	7/8/2017	 HANDPHONE	SAMSUNG GALAXY J1 MINI	2	564.16	33.85	598.01	20%	112.83	47.01	159.85	272.68						291.48		PENGGUNAAN CSD	
+Equipment	AWM/OEQ/000049	3/12/2017	WIRELESS PRESENTER	LOGITECH R400 WIRELESS PRESENTER	1	159.43	9.57	169	20%	31.89	3.99	35.87	67.76						91.67			
+Equipment	AWM/OEQ/000050	5/12/2017	 QUICK CHARGER	CQUICK CHARGER WITH RECHARGEABLE BATTERIES (FUJITSU)	3	405	 -   	405	20%	81	10.13	91.13	172.13						232.88		CHEMIST	
+Equipment	AWM/OEQ/000051	18/4/2018	WIRELESS PRESENTER	LOGITECH R400 WIRELESS PRESENTER	1	69		69	20%	13.8	 -   	13.8	27.6						41.4			
+Equipment	AWM/OEQ/000052	18/7/2018	Fingerprint Door Access		1 set	3,000.00		3,000.00	20%	600		250	850						2,150.00			
+Equipment	AWM/OEQ/000053	18/7/2018	CCTV		1 set	600		600	20%	120		50	170						430			
+Equipment	AWM/OEQ/000054	18/7/2018	Keyphone		1 set	200		200	20%	40		16.67	56.67						143.33			
+Equipment	AWM/OEQ/000055	29/8/2018	Fridge	TOSHIBA 290L 2 DOOR	1	1,093.00		1,093.00	20%	218.6		72.87	291.47						801.53			
+Equipment	AWM/OEQ/000056	10/2/2019	Vacuum Cleaner	PANASONIC 	1	397	 -   	397	20%	79.4			66.17						330.83	 RW04278493 		
+Equipment	AWM/OEQ/000059	14/12/2019	Television	Samsung TV 40" with Beacket	1349	1,349.00		1,349.00	20%	269.8												
+Equipment	AWM/OEQ/000060	27/7/2020	 HANDPHONE	Redmi 9 (CSD)	2	599			20%													
+Equipment						75,751.84	297.49	75,450.33		10,749.19	32,378.33	38,481.71	45,240.32						28,563.52			
+Equipment								 NO . 55 														
+Equipment	AWM/OEQ/000035	18/4/2016	PA SYSTEM (CENTRIO) - 	PHONSION MIC & LG HTIB DH - 6340H 4M VS)		790.56	47.43	837.99	20%	158.11	263.52	421.63	579.74						210.82			
+Equipment	AWM/OEQ/000036	23/3/2016	Daewoo Freezer		1	800		800	10%	80	140	220	300						500		 Centrio 55-G 	
+Equipment	AWM/OEQ/000039	23/9/2016	LG Home Theatre		1 set	848.11	50.89	899	10%	84.81	106.01	190.82	275.63						572.48			
+Equipment	AWM/OEQ/000040	1/10/2016	Fridge	RS-A1RTSL1		2,829.25	169.76	2,999.01	10%	282.93	330.08	613.01	895.93						1,933.32		 Centrio 55-G 	
+Equipment	AWM/OEQ/000057		Worktable	"S/S Worktable with 1 tier Undershelf
+DIM : 1830 x 760 x 840 mm"	4	2,856.00		2,856.00	20%	571.2			142.8						2,713.20			
+Equipment	AWM/OEQ/000058		Worktable	"S/S Worktable with 1 tier Undershelf
+DIM : 1525 x 760 x 840 mm"	1	1,029.00		1,029.00	20%	205.8			51.45						977.55			
+Equipment						9,152.92	268.08	9,421.00		1,382.85	839.61	1,445.46	2,245.56						6,907.36			
+Equipment								 NO . 978 														
+Equipment	AWM/OEQ/000060	2/12/2020	SAMSUNG WASHER MACHINE		1	1,900.00		1,900.00	20%	380									380			
+Equipment	AWM/OEQ/000061		PANASONIC STEAM IRON		1	400		400	20%	80									80		 Centrio 55-G 	
+Equipment	AWM/OEQ/000062		SAMSUNG VACUUM CLEANER		1	370		370	20%	74									74			
+Equipment	AWM/OEQ/000063		SAMSUNG FRIDGE		1	3,300.00		3,300.00	20%	660									660		 Centrio 55-G 	
+Equipment	AWM/OEQ/000064		SAM,SUNG LED TV		1	1,599.00		1,599.00	20%	319.8									319.8			
+Equipment						7,569.00	 -   	7,569.00		1,513.80	 -   	 -   	 -   						1,513.80			
+Air conditioner (include OE)								 NO . 154 														
+Air conditioner (include OE)	AWM/AIC/000001	***	Air Conditioner		1	730		730	10%	73	584	657	729						1			
+Air conditioner (include OE)	AWM/AIC/000002	***	Air Conditioner		1	1,500.00		1,500.00	10%	150	1,499.00	1,499.00	1,499.00						1			
+Air conditioner (include OE)	AWM/AIC/000003	***	Air Conditioner		1	1,000.00		1,000.00	10%	100	999	999	999						1			
+Air conditioner (include OE)	AWM/AIC/000004	23/6/2014	7sets acson 1HP Aircond		7	6,293.00		6,293.00	10%	629.3	2,517.20	3,146.50	3,775.80						2,517.20		 154-2 	
+Air conditioner (include OE)	AWM/AIC/000005		2sets 1.5HP Aircond		2	2,300.00		2,300.00	10%	230	920	1,150.00	1,380.00						920			
+Air conditioner (include OE)	AWM/AIC/000006		1set 2.0 HP Aircond		1	1,850.00		1,850.00	10%	185	740	925	1,110.00						740			
+Air conditioner (include OE)	AWM/AIC/000012	30/8/2016	1 Unit Daikin	 Aircond 1HP - 154-1	1	1,280.00		1,280.00	10%	128	170.67	298.67	426.67						853.33		 Invoice 35 	
+Air conditioner (include OE)	AWM/AIC/000013	4/5/2017	Aircond 1.0hp	Free Copper 8Feet	1	1,180.00		1,180.00	20%	236	157.33	393.33	629.33						550.67		 154-G 	
+Air conditioner (include OE)	AWM/AIC/000014	4/5/2017	Aircond 1.5hp	Free Copper 8Feet	1	1,670.00		1,670.00	20%	334	222.67	556.67	890.67						779.33			
+Air conditioner (include OE)						17,803.00	 -   	17,803.00	1.1	2,065.30	7,809.87	9,625.17	11,439.47						6,363.53			
+Air conditioner (include OE)								 NO . 55 														
+Air conditioner (include OE)	AWM/AIC/000007	31/10/2015	3 Units Daikin	 Aircond Cassete - Lot 55-1	3	8,550.00		8,550.00	10%	855	1,852.50	2,707.50	3,562.50						4,987.50			
+Air conditioner (include OE)	AWM/AIC/000008	31/10/2015	2 Unit Daikin 	Aircond 1HP - Lot 55-G	2	1,960.00		1,960.00	10%	196	424.67	620.67	816.67						1,143.33			
+Air conditioner (include OE)	AWM/AIC/000009	28/3/2016	2 Unit Acson Aircond 55-1	HP ACSON AIRCOND 	2	4,700.00		4,700.00	10%	470	822.5	1,292.50	1,762.50						2,937.50			
+Air conditioner (include OE)	AWM/AIC/000010	22/8/2016	2 Unit Daikin	 Aircond Ceiling Exposed 2HP-55-1	2	6,400.00		6,400.00	10%	640	853.33	1,493.33	2,133.33						4,266.67			
+Air conditioner (include OE)	AWM/AIC/000011	22/8/2016	2 Unit Daikin 	Aircond Wall Mounted 2HP -55-G	2	5,200.00		5,200.00	10%	520	693.33	1,213.33	1,733.33						3,466.67			
+Air conditioner (include OE)						26,810.00	 -   	26,810.00	0.5	2,681.00	4,646.34	7,327.34	10,008.34						16,801.66			
+Air conditioner (include OE)								 NO . 978 														
+Air conditioner (include OE)	AWM/AIC/000015	11/10/2019	Daikin	Aircond 1.5hp Wall Mounted	1	1,380.00		1,380.00	20%	276			46						1,334.00			
+Air conditioner (include OE)	AWM/AIC/000016	12/10/2019	Daikin	Aircond 1.0hp Wall Mounted	1	1,080.00		1,080.00	20%	216			36						1,044.00			
+Air conditioner (include OE)	AWM/AIC/000017	12/10/2019	Daikin	Aircond 1.0hp Wall Mounted	1	1,080.00		1,080.00	20%	216			36						1,044.00			
+Air conditioner (include OE)	AWM/AIC/000018	12/10/2019	Daikin	Aircond 1.0hp Wall Mounted	1	1,080.00		1,080.00	20%	216			36						1,044.00			
+Air conditioner (include OE)						4,620.00	 -   	4,620.00	0.8	924	 -   	 -   	154						4,466.00			
+Renovation					 NO.154. Jalan S2 B5, Seremban 2, 70300 Seremban Negeri Sembilan 																	
+Renovation		 	Renovation			3,000.00		3,000.00	10%	300	600	900	1,200.00						1,800.00			
+Renovation			Renovation			57,120.00		57,120.00	10%	5,712.00	22,848.00	28,560.00	34,272.00						22,848.00			
+Renovation		31/7/2015	Renovation-	C5-14		74,240.00		74,240.00	10%	7,424.00	17,941.33	25,365.33	32,789.33						41,450.67			
+Renovation		31/8/2015	Renovation			34,000.00		34,000.00	10%	3,400.00	7,933.33	11,333.33	14,733.33						19,266.67			
+Renovation		30/9/2015	Renovation-	C5-14		24,000.00		24,000.00	10%	2,400.00	5,400.00	7,800.00	10,200.00						13,800.00			
+Renovation		30/11/2015	Renovation			2,070.00		2,070.00	10%	207	431.25	638.25	845.25						1,224.75			
+Renovation		18/8/2016	Renovation	No.154-1, Partition Work		4,350.00		4,350.00	10%	435	580	1,015.00	1,450.00						2,900.00			
+Renovation		14/9/2016	Renovation	No.154-G, Painting Job, Piping & Door Grills		13,400.00		13,400.00	10%	1,340.00	1,786.67	3,126.67	4,466.67						8,933.33			
+Renovation		1/6/2018	Rozamel Construction	50% for Office Renovstion (154-G)		9,350.00		9,350.00	20%	1,870.00		935	2,805.00						6,545.00			
+Renovation		14/6/2018	Rozamel Construction	Progress Payment 25%, 10% & 10% (154-G)		8,415.00		8,415.00	20%	1,683.00		841.5	2,524.50						5,890.50			
+Renovation		28/6/2018	Rozamel Construction	Variation Order		2,520.00		2,520.00	20%	504		252	756						1,764.00			
+Renovation		12/7/2018	Rozamel Construction	5% Final Payment		935		935	20%	187		77.92	264.92						670.08			
+Renovation						233,400.00	 -   	233,400.00	1.6	25,462.00	57,520.58	80,845.00	106,307.00						127,093.00			
+Renovation					 No 55, Jalan S2 B18, Pusat Dagangan Seremban 2, 																	
+Renovation		31/3/2015	Renovation-	Training Room Seremban		7,000.00		7,000.00	10%	700	1,925.00	2,625.00	3,325.00						3,675.00			
+Renovation		15/2/2016	Renovation	Grill at No. 55-1(Centrio) 		22,870.00		22,870.00	10%	2,287.00	4,383.42	6,670.42	8,957.42						13,912.58			
+Renovation		4/7/2016	Renovation	No.55-G		65,697.10		65,697.10	10%	6,569.71	9,854.57	16,424.28	22,993.99						42,703.11			
+Renovation		9/8/2016	Renovation	No.55 (G), Install Wallpaper		3,679.00		3,679.00	10%	367.9	521.19	889.09	1,256.99						2,422.01			
+Renovation			Renovation	Intsall Railing Curtain		972		972	10%	97.2	137.7	234.9	332.1						639.9			
+Renovation		30/8/2016	Renovation	Electrical Work		4,535.00		4,535.00	10%	453.5	604.67	1,058.17	1,511.67						3,023.33			
+Renovation						104,753.10	 -   	104,753.10	0.6	10,475.31	17,426.55	27,901.86	38,377.17						66,375.93			
+Renovation					 No. 176, Jalan S2 C9, Seksyen C, Green Technology Park, Seremban 2, 70300 Seremban,  																	
+Renovation		23/11/2017	Shahithir Construction	"20% Deposit For Lab Renovation (1)
+i) MPS Submission (RM10,000.00)
+ii) Concrete slab 6'
+iii) Concreting slab foundation external building
+iv) Installation underground TNB Cable
+v) Installation underground piping(plumbing)
+vi) Installation holding tank of waste water"		56,499.38		56,499.38	20%	11,299.88		11,299.88	22,599.75						33,899.63		 Invoice 93 	
+Renovation		14/12/2017	Shahithir Construction	"20% Deposit For Lab Renovation (2)
+i) Internal Electric Works
+ii) Internal Plumbing Works
+iii) Brickworks (structural Works)"		57,999.38		57,999.38	20%	11,599.88		11,599.88	23,199.75						34,799.63		 Invoice 95 	
+Renovation		28/12/2017	Shahithir Construction	"20% Deposit For Lab Renovation (3)
+i) Metal Deck Roofing
+ii) Installation frame Window
+iii)Partition 1st Floor & Carpet
+iv) Plastering Works for external building"		57,999.38		57,999.38	20%	11,599.88		11,599.88	23,199.75						34,799.63		 Invoive 98 	
+Renovation		27/1/2018	Shahithir Construction	"20% Deposit For Lab Renovation (4)
+i) Tiling Works
+ii) Installation Partition Ground Floor
+iii) Installation Tempered Glass Door"		57,999.38		57,999.38	20%	11,599.88		11,599.88	23,199.75						34,799.63		 Invoive 02 	
+Renovation		20/4/2018	Shahithir Construction	"15% Progress Payment (5th Claim) 1.Fitting Plumbing, electrical Works, access card & cctv. 
+2.Painting work"		33,499.54		33,499.54	20%	6,699.91		4,466.61	11,166.51						22,333.03		 Invoive 04 	
+Renovation		20/12/2017	Shahithir Construction	"50% Deposit Of Variation Works Order :
+i) Brickwall Fencing 6 feet high, complete with TNB Compartment"		11,062.50		11,062.50	20%	2,212.50		2,212.50	4,425.00						6,637.50		 Invoice 97 	
+Renovation		21/12/2017	Yap iron Works & Installation	"Grill Installation (Lab No.176)
+- 5' x 5' Iron Grill Windows - 4 Units
+- 2' x 2' Iron Grill Windows - 1 Unit
+- 3' x 7' Iron Grill Window - 1 Unit"		2,400.00		2,400.00	20%	480	 -   	480	960						1,440.00			
+Renovation		27/2/2018	Shahithir Construction	"50% Balance Payment Of Variation Works Order :
+i) Brickwall Fencing 6 feet high, complete with TNB Compartment"		11,062.50		11,062.50	20%	2,212.50		1,843.75	4,056.25						7,006.25		 Invoice 97 	
+Renovation		16/3/2018	Shahithir Construction	Payment for Variation Work Order 9No.2)		6,645.00		6,645.00	20%	1,329.00		996.75	2,325.75						4,319.25			
+Renovation		4/4/2018	Shahithir Construction	Payment for Water Pump Installation		2,960.00		2,960.00	20%	592		394.67	986.67						1,973.33			
+Renovation		4/4/2018	Shahithir Construction	Payment for Variation Order Works (04/2018)		700		700	20%	140		93.33	233.33						466.67			
+Renovation		23/11/2017	Shahithir Construction	i) MPS Submission (RM10,000.00)		-10,000.00		-10,000.00	20%	-2,000.00		-2,000.00	-4,000.00						-6,000.00			
+Renovation		23/11/2017	Shahithir Construction	"Aircond Daikin
+i) Ground Floor 2 (1HP) 'back to back"	1	-1,350.00		-1,350.00	20%	-270		-270	-540						-810			
+Renovation		23/11/2017	Shahithir Construction	Working Area (2HP)	2	-4,640.00		-4,640.00	20%	-928		-928	-1,856.00						-2,784.00			
+Renovation		23/11/2017	Shahithir Construction	Chemist Room, Waiting Room, Surau Male, Surau Female, Meeting Room (1HP)	5	-6,750.00		-6,750.00	20%	-1,350.00		-1,350.00	-2,700.00						-4,050.00			
+Renovation		23/11/2017	Shahithir Construction	Hall 1, Hall 2, Room 1 & Room 3 (1.5HP)	4	-7,400.00		-7,400.00	20%	-1,480.00		-1,480.00	-2,960.00						-4,440.00			
+Renovation		23/11/2017	Shahithir Construction	1st Floor Room 4 & 5 (1HP)	2	-2,700.00		-2,700.00	20%	-540		-540	-1,080.00						-1,620.00			
+Renovation		23/11/2017	Shahithir Construction	Carpet 1st Floor	570 ft2	-3,135.00		-3,135.00	20%	-627		-627	-1,254.00						-1,881.00			
+Renovation		14/7/2017	Shahithir Construction	Draft Architect Drawing		-1,500.00		-1,500.00	20%	-300		-300	-600						-900			
+Renovation		8/12/2017	Akin Bina Sdn Bhd	"30% Payment (1)
+i) Pipeline for  N2, He, CA, O2, Ar, H2
+ii) PA Laboratory Gas System Installation"		15,690.00	941.4	16,631.40	20%	3,138.00		3,138.00	6,276.00						9,414.00			
+Renovation		5/2/2018		"25% Claim from 50% Progress Payment for Installation of
+ Pipeline System, N2, He, CA, O2, Ar, H2 and PA."		13,075.00	784.5	13,859.50	20%	2,615.00		2,179.17	4,794.17						8,280.83			
+Renovation		3/4/2018		"Payment for 25% claim of progress payment 
+- installation of gas pipeline"		13,075.00	784.5	13,859.50	20%	2,615.00		1,743.33	4,358.33						8,716.67			
+Renovation		3/4/2018		Payment for Regulator for Oxygen System - (Variation order No.1)		3,000.00	180	3,180.00	20%	600		400	1,000.00						2,000.00			
+Renovation		6/6/2018		20% Final Claim for Installation of Pipeline System, N2, He, CA, O2, Ar, H2 and PA.		10,460.00	627.6	11,087.60	20%	2,092.00		1,046.00	3,138.00						7,322.00			
+Renovation		16/3/2018	Yap iron Works & Installation	Auto Gate System, Sliding Iron Grill Door & Iron Grill Windows		10,706.00		10,706.00	20%	2,141.20		1,605.90	3,747.10						6,958.90			
+Renovation		5/9/2018	Yap iron Works & Installation	Tangga Kecemasan		5,950.00		5,950.00	20%	1,190.00		297.5	1,487.50						4,462.50			
+Renovation		13/6/2019	Yap iron Works & Installation	Scheduled Wastes Store Installation		4,970.00		4,970.00	20%	994		 -   	497						4,473.00			
+Renovation						338,278.06	3,318.00	341,596.06	5.4	67,655.61	 -   	59,502.01	126,660.62						211,617.44			
+Renovation					 No. 978, Jalan S2 G19, Garden Avenue, 70300 Seremban, Negeri Sembilan 																	
+Renovation		9/8/2019	Rozamel Construction	Deposit 30%  to Contractor		21,510.00		21,510.00	20%	4,302.00			1,434.00						20,076.00			
+Renovation		27/8/2019	Rozamel Construction	25% Progress Payment ro Contractor		17,925.00		17,925.00	20%	3,585.00			1,195.00						16,730.00			
+Renovation		5/9/2019	Rozamel Construction	20% Progress Payment ro Contractor		14,340.00		14,340.00	20%	2,868.00			717						13,623.00			
+Renovation		13/9/2019	Rozamel Construction	20% Progress Payment ro Contractor		14,340.00		14,340.00	20%	2,868.00			717						13,623.00			
+Renovation		23/9/2019	Rozamel Construction	To supply & install a complete set of door bells		100		100	20%	20			5						95			
+Renovation				To supply and install 1 unit of ceiling fan		180		180	20%	36			9						171			
+Renovation				To supply and install 2 Unit Power Point including 2 Unit Water Heater with Pump (Joven)		1,600.00		1,600.00	20%	320			80						1,520.00			
+Renovation				To supply and install heavy duty tiles on Car Porch (29'x24')		5,800.00		5,800.00	20%	1,160.00			290						5,510.00			
+Renovation						75,795.00	 -   	75,795.00	1.6	15,159.00	 -   	 -   	4,447.00						71,348.00			
+Renovation							 OTHER RENOVATION 															
+Renovation		21/3/2016	Renovation	Repainting WPU 9123 Mercedes		4,000.00		4,000.00	10%	400	700	1,100.00	1,500.00						2,500.00			
+Renovation		23/6/2016	Renovation	Tinted Starex		1,165.00		1,165.00	10%	116.5	174.75	291.25	407.75						757.25			
+Renovation		1/7/2016	Renovation	Tinted Iriz		550		550	10%	55	82.5	137.5	192.5						357.5			
+Renovation						5,715.00	 -   	5,715.00	0.3	571.5	957.25	1,528.75	2,100.25						3,614.75			
+Laboratory	AWM/LAB/CPT/000001	18/11/2015	Computer	ACER ASPIRE Z1-611 DESKTOP	1	1,697.17	101.83	1,799.00	20%	339.43	678.87	1,018.30	1,357.74						339.43	 S/N: DQSZOM000254200F703000 -   	Receptionist	
+Laboratory	AWM/LAB/CPT/000002	10/1/2018	Computer	HP AIO PC 20c042d	1	1,679.25	100.75	1,780.00	20%	335.85	 -   	307.86	643.71						1,035.54	 S/N: 8CC730117R  	Afiqah	
+Laboratory	AWM/LAB/CPT/000003	10/1/2018	Computer	"HP AIO PC 20c042d
+"	1	1,679.24	100.76	1,780.00	20%	335.85	 -   	307.86	643.71						1,035.53	 S/N: 8CC730112N  	Hayati	
+Laboratory	AWM/LAB/CPT/000004	10/1/2018	Computer	"HP AIO PC 20c042d
+"	1	1,679.25	100.75	1,780.00	20%	335.85	 -   	307.86	643.71						1,035.54	  S/N: 8CC7301189  	En Yusof	
+Laboratory	AWM/LAB/CPT/000005	8/3/2018	Computer	HP-20-C042D-INTELPENTIUMJ3/10-1.6GHZ,4GBR31600SODIMM,500GB,W1064,19.5"WLED	1	1,603.77	96.23	1,700.00	20%	320.75	 -   	240.57	561.32						1,042.45	 S/N: 8CC730112P-  	Maria	
+Laboratory	AWM/LAB/CPT/000006	8/3/2018	Computer	HP-20-C042D-INTELPENTIUMJ3/10-1.6GHZ,4GBR31600SODIMM,500GB,W1064,19.5"WLED	1	1,603.77	96.23	1,700.00	20%	320.75	 -   	240.57	561.32						1,042.45	 S/N:8CC804173W- 	Azreen	
+Laboratory	AWM/LAB/CPT/000007	8/3/2018	Computer	HP-20-C042D-INTELPENTIUMJ3/10-1.6GHZ,4GBR31600SODIMM,500GB,W1064,19.5"WLED	1	1,603.77	96.23	1,700.00	20%	320.75	 -   	240.57	561.32						1,042.45	 S/N: 8CC8051JBJ  	Intan	
+Laboratory	AWM/LAB/CPT/000008	8/3/2018	Computer	HP-20-C042D-INTELPENTIUMJ3/10-1.6GHZ,4GBR31600SODIMM,500GB,W1064,19.5"WLED	1	1,603.77	96.23	1,700.00	20%	320.75	 -   	240.57	561.32						1,042.45	 S/N: 8CC8051MKG- D314 	No User (Sayila)	
+Laboratory	AWM/LAB/CPT/000009	8/3/2018	Computer	HP-20-C042D-INTELPENTIUMJ3/10-1.6GHZ,4GBR31600SODIMM,500GB,W1064,19.5"WLED	1	1,603.77	96.23	1,700.00	20%	320.75	 -   	240.57	561.32						1,042.45	 S/N: 8CC8051MK2-  	Human Resource	
+Laboratory	AWM/LAB/CPT/000010	8/3/2018	Computer	HP-20-C042D-INTELPENTIUMJ3/10-1.6GHZ,4GBR31600SODIMM,500GB,W1064,19.5"WLED	1	1,603.77	96.23	1,700.00	20%	320.75	 -   	240.57	561.32						1,042.45	 S/N: 8CC8051MKV- D317 	Dr. Ahyar	
+Laboratory	AWM/LAB/CPT/000012	30/3/2018	Laptop	ACER-E5-4/5-354E-GREY-INTELCORE13-6006,4GBR4,1TB,14"LED,W1064	1	1,508.49	90.51	1,599.00	20%	301.7	 -   	226.27	527.97						980.52	 S/N: NXGCUSM0028051B2617600  		
+Laboratory	AWM/LAB/PJT/000001	28/3/2018	Projector	"ACER X1223H DLP XGA 3600LM 
+0"	1	1,490.57	89.43	1,580.00	20%	298.11	 -   	223.59	521.7						968.87	 S/N: MRJP1100K75101858840 	 Meeting Room	
+Laboratory	AWM/LAB/PHN/000001 - 010	16/4/2018	Key Phone		10	1,340.00	 -   	1,340.00	10%	134	 -   	89.33	223.33						1,116.67			
+Laboratory	AWM/LAB/PTR/000001	24/3/2018	Wireless Printer	HP 415 INK TANK	1	659	 -   	659	20%	131.8	 -   	98.85	230.65						428.35	 SN: CN821G2G 176-G 		
+Laboratory	AWM/LAB/PTR/000002	13/4/2018	Printer	EPSON Dot Matrix Printer LQ310	1	750	45	795	20%	150	 -   	100	250						500		Finance	
+Air conditioner - 176	AWM/LAB/AIC/000001	2/12/2017	Aircond Daikin	" Room 1  (1.5HP)
+Model : FTN15PV1L"	1	1,850.00	 -   	1,850.00	10%	185	15.42	200.42	385.42						1,464.58		SN: 20600112155594	
+Air conditioner - 176	AWM/LAB/AIC/000002	23/11/2017	Aircond Daikin	"Room 2 (1HP) 'back to back
+Model : FTN10PV1L"	1	1,350.00	 -   	1,350.00	10%	135	11.25	146.25	281.25						1,068.75		SN: 20600312338113	
+Air conditioner - 176	AWM/LAB/AIC/000003	3/12/2017	Aircond Daikin	"Room 3 (1.5HP)
+Model : FTN15PV1L"	1	1,850.00	 -   	1,850.00	10%	185	15.42	200.42	385.42						1,464.58		SN: 20600305163534	
+Air conditioner - 176	AWM/LAB/AIC/000004	24/11/2017	Aircond Daikin	"Working Area (2HP)
+Model : FTN10PV1L"	1	2,320.00	 -   	2,320.00	10%	232	38.67	270.67	502.67						1,817.33		SN: 20603112116124	
+Air conditioner - 176	AWM/LAB/AIC/000005	24/11/2017	Aircond Daikin	"Working Area (2HP)
+Model : FTN10PV1L"	1	2,320.00	 -   	2,320.00	10%	232	38.67	270.67	502.67						1,817.33		SN: 2060151295402	
+Air conditioner - 176	AWM/LAB/AIC/000006	25/11/2017	Aircond Daikin	"Chemist Room, (1HP)
+Model : FTN10PV1L"	1	1,350.00	 -   	1,350.00	10%	135	22.5	157.5	292.5						1,057.50		SN: 20600312336819	
+Air conditioner - 176	AWM/LAB/AIC/000007	26/11/2017	Aircond Daikin	"Waiting Room, (1HP)
+Model : FTN10PV1L"	1	1,350.00	 -   	1,350.00	10%	135	22.5	157.5	292.5						1,057.50		SN: 20600312336815	
+Air conditioner - 176	AWM/LAB/AIC/000008	29/11/2017	Aircond Daikin	"Meeting Room, (1HP)
+Model : FTN10PV1L"	1	1,350.00	 -   	1,350.00	10%	135	22.5	157.5	292.5						1,057.50		SN: 20600312338102	
+Air conditioner - 176	AWM/LAB/AIC/000009	27/11/2017	Aircond Daikin	"Surau Male, (1HP)
+Model : FTN10PV1L"	1	1,350.00	 -   	1,350.00	10%	135	22.5	157.5	292.5						1,057.50		SN: 20600312338100	
+Air conditioner - 176	AWM/LAB/AIC/000010	28/11/2017	Aircond Daikin	"Surau Female, (1HP)
+Model : FTN10PV1L"	1	1,350.00	 -   	1,350.00	10%	135	22.5	157.5	292.5						1,057.50		SN: 20602305442676	
+Air conditioner - 176	AWM/LAB/AIC/000011	30/11/2017	Aircond Daikin	"Hall 1 (1.5HP)
+Model : FTN15PV1L"	1	1,850.00	 -   	1,850.00	10%	185	30.83	215.83	400.83						1,449.17		SN: 20600385163488	
+Air conditioner - 176	AWM/LAB/AIC/000012	1/12/2017	Aircond Daikin	"Hall 2 (1.5HP)
+Model : FTN15PV1L"	1	1,850.00	 -   	1,850.00	10%	185	15.42	200.42	385.42						1,464.58		SN: 20603005230056	
+Air conditioner - 176	AWM/LAB/AIC/000013	4/12/2017	Aircond Daikin	"1st Floor Room 4 (1HP) 
+Model : FTN10PV1L"	1	1,350.00	 -   	1,350.00	10%	135	11.25	146.25	281.25						1,068.75		SN: 20600312338123	
+Air conditioner - 176	AWM/LAB/AIC/000014	5/12/2017	Aircond Daikin	"1st Floor Room 5 (1HP)
+Model : FTN10PV1L"	1	1,350.00	 -   	1,350.00	10%	135	11.25	146.25	281.25						1,068.75		SN: 20600312338111	
+						22,840.00	 -   	22,840.00			300.67	2,584.67	4,868.67						17,971.33			
+																						
+	Furniture & Fitting																					
+	 CODE 	DATE	ITEM	DETAIL/SPECIFICATION	UNIT	 NETT PRICE 	 GST 	 TOTAL 	RATE	 DEPR. 	" ACC. DEPR
+2017 "	" ACC. DEPR
+2018 "	" ACC. DEPR
+2019 "						 NBV 2019 	 SERIAL NO / PO NO 	 REMARKS 	
+Furniture and fittings - 176	AWM/LAB/FNF/001	23/11/2017		Carpet 1st Floor	570 ft2	3,135.00	 -   	3,135.00	10%	313.5	26.13	339.63	653.13						2,481.88		Shahithir Construction	
+Furniture and fittings - 176	AWM/LAB/FNF/002-003	16/2/2018	MAIN LAB	"Custom Island Bench 
+3600 x 1500 x 900"	2	21,900.00	1,314.00	23,214.00	20%	4,380.00	 -   	4,380.00	8,760.00						17,520.00		CHEMOPHARM - PO NO-000046	
+Furniture and fittings - 176	AWM/LAB/FNF/004			"Custom Island Bench 
+6250 x 750 x 900"	1	9,320.00	559.2	9,879.20	20%	1,864.00	 -   	1,864.00	3,728.00						7,456.00			
+Furniture and fittings - 176	AWM/LAB/FNF/005			"Custom Island Bench 
+3600 x 750 x 900"	1	4,970.00	298.2	5,268.20	20%	994	 -   	994	1,988.00						3,976.00			
+Furniture and fittings - 176	AWM/LAB/FNF/006-007			Fume Cupboard	2	26,000.00	1,560.00	27,560.00	20%	5,200.00	 -   	5,200.00	10,400.00						20,800.00			
+Furniture and fittings - 176	AWM/LAB/FNF/008			"Exhaust Duct Doe
+*Exhaust Duct Installation (RM4,690.00)"	1	11,630.00	697.8	12,327.80	20%	2,326.00	 -   	2,326.00	4,652.00						9,304.00			
+Furniture and fittings - 176	AWM/LAB/FNF/009			Emergency Drench Shower & Eyewash	1	3,440.00	206.4	3,646.40	20%	688	 -   	688	1,376.00						2,752.00			
+Furniture and fittings - 176	AWM/LAB/FNF/010-011			Antivibration / Balance Table 	2	7,630.00	457.8	8,087.80	20%	1,526.00	 -   	1,526.00	3,052.00						6,104.00			
+Furniture and fittings - 176	AWM/LAB/FNF/012-013			Safety Acid Storage Cabinet	2	6,630.00	397.8	7,027.80	20%	1,326.00	 -   	1,326.00	2,652.00						5,304.00			
+Furniture and fittings - 176	AWM/LAB/FNF/014			Safety Flammable Storage Cabinet	1	3,320.00	199.2	3,519.20	20%	664	 -   	664	1,328.00						2,656.00			
+Furniture and fittings - 176	AWM/LAB/FNF/015			Custom Wall Bench (L-Shaped)	1	6,540.00	392.4	6,932.40	20%	1,308.00	 -   	1,308.00	2,616.00						5,232.00			
+Furniture and fittings - 176	AWM/LAB/FNF/016			Room 2: CHNS & TOC (Custom Wall Bench L Shaped)	1	6,100.00	366	6,466.00	20%	1,220.00	 -   	1,220.00	2,440.00						4,880.00			
+Furniture and fittings - 176	AWM/LAB/FNF/017			Room 3 : ICP-OES and Mercury Analyzer (Custom Wall Bench L-Shaped)	1	6,600.00	396	6,996.00	20%	1,320.00	 -   	1,320.00	2,640.00						5,280.00			
+Furniture and fittings - 176			DISCOUNT			-7,282.20	-436.93	-7,719.13	20%	-1,456.44		-1,456.44	-2,912.88						-5,825.76			
+Furniture and fittings - 176	AWM/LAB/FNF/018-024	13/3/2018	O031-011	"APEX YH Standard Desk 2.5 x 4 Feet
+WK-YH1200 L.Grey
+(1200W x 740D x 760H MM)"	7	875	52.5	927.5	10%	87.5	 -   	65.63	153.13						809.38			
+Furniture and fittings - 176	AWM/LAB/FNF/025		O491-165	"VS Foldable Table 2 x 4 Feet VF420N
+(Beech)"	1	100	6	106	10%	10		7.5	17.5						92.5			
+Furniture and fittings - 176	AWM/LAB/FNF/026-038		O031-013	"Mobile Pedestal 3D L.Grey
+(425Wx490Dx540H MM)"	13	1,222.00	73.32	1,295.32	10%	122.2		91.65	213.85						1,130.35			
+Furniture and fittings - 176	AWM/LAB/FNF/039		O491-299	"Meeting Table
+ (3000W x 1200D x 750H MM) 
+Straight Table"	1	1,050.00	63	1,113.00	10%	105		78.75	183.75						971.25			
+Furniture and fittings - 176	AWM/LAB/FNF/040		No.6	"Reception Counter 
+(1540W x 404D x 1050H)
+-With 5’ Steel Leg Table"	1	1,010.00	60.6	1,070.60	10%	101		75.75	176.75						934.25			
+Furniture and fittings - 176	AWM/LAB/FNF/041-054		O155-067	FOX Mesh Lowback Chair Mesh 12 /M	14	2,364.18	141.85	2,506.03	10%	236.42		177.31	413.73						2,186.87			
+Furniture and fittings - 176	AWM/LAB/FNF/055-057		O155-249	FOX Executive Highback Chair (Full Fabric) - Blue	2	300	18	318	10%	30		22.5	52.5						277.5			
+Furniture and fittings - 176	AWM/LAB/FNF/058-061		O031-422	"APEX CH-MICA-01 
+(442W x 420D x 860H MM)
+"	4	440	26.4	466.4	10%	44		33	77						407			
+Furniture and fittings - 176	AWM/LAB/FNF/062-079		O134-002	"Banquet Chair E670
+Chrome Leg (Blue)"	18	1,980.00	118.8	2,098.80	10%	198		148.5	346.5						1,831.50			
+Furniture and fittings - 176	AWM/LAB/FNF/080-083		O031-120	"Sliding Door Cabinet,
+(800Wx450Dx828H MM0"	4	600	36	636	10%	60		45	105						555			
+Furniture and fittings - 176	AWM/LAB/FNF/084-089	13/3/2028	"Cluster of 6 Workstation 
+Rectangular Worktop
+Size : 1500Wx600D
+Color : Grey"		6	420	25.2	445.2	10%	42		31.5	73.5						388.5			
+Furniture and fittings - 176	AWM/LAB/FNF/090-092		"Full Board Partition c/w Trunking (2 Hole)
+Size: 1500Wx1200H
+Color: Dark Grey"		3	780	46.8	826.8	10%	78		58.5	136.5						721.5			
+Furniture and fittings - 176			"Full Board Partition w/o Trunking
+Size: 600Wx1200H
+Colour: Dark Grey
+Accessories :"		8	1,000.00	60	1,060.00	10%	100		75	175						925			
+Furniture and fittings - 176			Square Pole,1200H		2	130	7.8	137.8	10%	13		9.75	22.75						120.25			
+Furniture and fittings - 176			Tee Pole, 1200H		2	120	7.2	127.2	10%	12		9	21						111			
+Furniture and fittings - 176			End Pole, 1200H		8	160	9.6	169.6	10%	16		12	28						148			
+Furniture and fittings - 176			F3 Mounting Bracket		24	264	15.84	279.84	10%	26.4		19.8	46.2						244.2			
+Furniture and fittings - 176	AWM/LAB/FNF/093-102	14/4/2018	High Bar Stool		10	635	38.1	673.1	10%	63.5		42.33	105.83						592.67			
+Furniture and fittings - 176	AWM/LAB/FNF/103-105		Apex 4 Drawers Metal Filing Cabinet		3	810	48.6	858.6	10%	81		54	135						756			
+Furniture and fittings - 176	AWM/LAB/FNF/106-107		White Board (3’ x 4’)		2	200	12	212	10%	20		13.33	33.33						186.67			
+Furniture and fittings - 176	AWM/LAB/FNF/108-109		Fibreglass Table (4 Seater)		2	1,200.00	72	1,272.00	10%	120		80	200						1,120.00			
+Furniture and fittings - 176	AWM/LAB/FNF/110		EPSON Dot Matrix Printer LQ310		1	 -   		 -   	10%	 -   		 -   	 -   						 -   			
+Furniture and fittings - 176	AWM/LAB/FNF/111		"1. 1350W x 1800H (MM) – 1 Pcs    
+2. 1500W x 1800H (MM) – 1 Pcs    
+3. 3000W x 1800H (MM) – 1 Pcs       
+4. 1500W x 1800H (MM) – 1 Pcs      
+5. 2400W x 1800H (MM) – 1 Pcs    
+6. 3000W x 2250H (MM) – 1 Pcs    
+7. 1950W x 2250H (MM) – 1 Pcs    
+8. 2550W x 1800H (MM) – 1 Pcs    "		8 Parts	3,035.00	182.1	3,217.10	10%	303.5		202.33	505.83						2,832.67			
+Equipment - 176	AWM/LAB/EQT/000001	30/1/2012	Sound Level Meters 		1	2,674.50		2,674.50	20%	534.9	8,022.51	8,022.51	2,673.50						1		SPER SCIENTIFIC LTD	
+Equipment - 176	AWM/LAB/EQT/000002	30/1/2012	Sound Level Meters 		1	2,674.50		2,674.50	20%	534.9			2,673.50						1		SPER SCIENTIFIC LTD	
+Equipment - 176	AWM/LAB/EQT/000004	27/3/2012	Spectrophoto Meter Test Kit - Pharo 100		1	20,432.05		20,432.05	20%	4,086.41	20,431.05	20,431.05	20,431.05						1		MERK SDN BHD	
+Equipment - 176	AWM/LAB/EQT/000005	27/3/2012	Spectrophoto Meter Test Kit - TR 320		1																	
+Equipment - 176	AWM/LAB/EQT/000006	29/8/2013	Environmental Air Equipment	**TSP VFC Brush Style Air sampler 220 volts 50 hertz	1	44,138.06		44,138.06	20%	8,827.61	44,137.06	44,137.06	44,137.06						1		 TISCH ENVIRONMENTAL 	
+Equipment - 176	AWM/LAB/EQT/000007	29/8/2013		**PM10 VFC Brush Style Air Sampler 220v 50hz	1																	
+Equipment - 176	AWM/LAB/EQT/000008	13/9/2013	Environmental Monitoring - 	Stack Emission Control	1	41,728.11		41,728.11	20%	8,345.62	41,727.11	41,727.11	41,727.11						1		KEIKA VENTURES / APEX	
+Equipment - 176	AWM/LAB/EQT/000009-010	16/6/2015	Seba Electric Contact Meter Type KLL for Water Level Meter (30m & 200m)		2	4,555.88		4,555.88	20%	911.18	2,277.94	3,189.12	4,100.29						455.59			
+Equipment - 176	AWM/LAB/EQT/000011	3/6/2015	Equipment for Gas Monitoring		1	48,530.34		48,530.34	20%	9,706.07	25,074.01	34,780.08	44,486.15						4,044.19		E-Instruments International LLC	
+Equipment - 176	AWM/LAB/EQT/000012-1	7/9/2016	Variable Resistance Calibrator	Replacement Pen	1	3,201.92	 -   	3,201.92	20%	640.38	853.85	1,494.23	2,134.61						1,067.31		TISCH ENVIRONMENTAL	
+Equipment - 176	AWM/LAB/EQT/000012-2	7/9/2016	Recalibrator Of TSP & PM10 OR		1	850.25	 -   	850.25	20%	170.05	226.73	396.78	566.83						283.42			
+Equipment - 176	AWM/LAB/EQT/000013	17/1/2017	Analytcal Balance,	252G x 0.1MG (Internal Calibration)	1	3,200.00	192	3,392.00	20%	640	613.33	1,253.33	1,893.33						1,306.67		INTERSCIENCE SDN BHD	
+Equipment - 176	AWM/LAB/EQT/000014-015	23/4/2018	"Radiation Alert Survey Meter c/w Calibration by AELB Certified Agency 
+- Model : Monitor 4
+-Brand : S.E International"		2	7,000.00	 -   	7,000.00	20%	1,400.00	 -   	933.33	2,333.33						4,666.67		RAYSAFE CONSULTANCY SDN BHD - PO NO-000058	
+Equipment - 176	AWM/LAB/EQT/000016	14/4/2018	"Panasonic 2 Door Fridge
+*296L"		1	1,036.79	62.21	1,099.00	20%	207.36	 -   	138.24	345.6						691.19			
+Equipment - 176	AWM/LAB/EQT/000017	20/4/2018	2 Door Chiller		1	3,500.00	210	3,710.00	10%	350	 -   	233.33	583.33						2,916.67		Era Steel Sales & Marketing, PO NO-000071	
+Equipment - 176	AWM/LAB/EQT/000018	Apr-18	Gas Chromatography- Mass Spectrometer, GC-MSD		1	363,000.00	21,780.00	384,780.00	20%	72,600.00	 -   	48,400.00	121,000.00						242,000.00		 N665000A 	
+Equipment - 176	AWM/LAB/EQT/000019-1		#NAME?		1					 -   		 -   	 -   						 -   		 N6480012 	
+Equipment - 176	AWM/LAB/EQT/000019-2		Clarus 690 SQ8 GCMS Purge and Trap System,		1					 -   		 -   	 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000020		Atomx 230V with Eliminator, TL, SW includes		1	100,000.00	6,000.00	106,000.00	20%	20,000.00	 -   	13,333.33	33,333.33						66,666.67		 N6354005 	
+Equipment - 176	AWM/LAB/EQT/000020-1		"Computer 
+*Desktop (4A)"		1				.				 -   						 -   		 LSMA-1 	
+Equipment - 176	AWM/LAB/EQT/000020-2		CPU (4B)		1								 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000020-3		Keyboard (4C)		1								 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000020-4		Printer		1								 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000020-5		Vacuum Pump		1								 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000020-6		-6kVA Uninterrupted Power Supply		1								 -   						 -   		 LSMA-3 	
+Equipment - 176			DISCOUNT			-136,275.00	-8,176.50	-144,451.50	20%	-27,255.00		-18,170.00	-45,425.00						-90,850.00			
+Equipment - 176						-7,241.15	-434.47	-7,675.62	20%	-1,448.23		-965.49	-2,413.72						-4,827.43			
+Equipment - 176			Mercury Analyzer (Flow Injection Mercury System FIMS)										 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000021		Mercury Analyzer: FIMS -100 Flow Injection Mercury System CV Hg AAS, 		1	82,400.00	4,944.00	87,344.00	20%	16,480.00		10,986.67	27,466.67						54,933.33			
+Equipment - 176	AWM/LAB/EQT/000021-1		-S10 autosampler, 148 positions		1	28,800.00	1,728.00	30,528.00	20%	5,760.00		3,840.00	9,600.00						19,200.00			
+Equipment - 176	AWM/LAB/EQT/000021-2		Automatic Voltage regulator		1				20%	 -   		 -   	 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000021-3		"Computer, DELL Optiplex  7040MT
+ *3.3 GHz Pentium i5 processors
+ *8 GB RAM
+ *500 GB HDD
+ *DVD R/W
+ *20” LCD
+ *Mouse, 104 keys keyboard
+ *MS- windows 7"		1				20%	 -   		 -   	 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000021-4		hP laserjet M12w printer						20%	 -   		 -   	 -   						 -   			
+Equipment - 176			DISCOUNT			-33,237.50	-1,994.25	-35,231.75	20%	-6,647.50		-4,431.67	-11,079.17						-22,158.33			
+Equipment - 176						-6,241.15	-374.47	-6,615.62	20%	-1,248.23		-832.15	-2,080.38						-4,160.77			
+Equipment - 176			Inductively Coupled Plasma Optical Emission Spectrometer ICP-OES		1	318,000.00	19,080.00	337,080.00	20%	63,600.00	 -   	212,000.00	275,600.00						42,400.00		 N0790011 	
+Equipment - 176	AWM/LAB/EQT/000022		Avio 200 ICP-OES System										 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000022-1		" -S10 Autosampler includes:
+*50pcs 50ml PTFE vial
+*50pcs 15ml PTFE vials
+*2 tray: 60 position, 15ml
+*1 tray: 9 position, 50ml, 29 position, 15ml
+*FEP tube 0.8mm id
+*Cleaning wire & communication cable"			28,800.00	1,728.00	30,528.00	20%	5,760.00		3,840.00	9,600.00						19,200.00		 N2020006 	
+Equipment - 176	AWM/LAB/EQT/000022-2		"DELL Optilex 7020MT PC System
+*Desktop
+*CPU
+*Keyboard"										 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000022-3		HP Black/White Laserjet  Printer										 -   						 -   		 LSMA-1 	
+Equipment - 176	AWM/LAB/EQT/000022-4		-7.5 kVA Voltage Stabilizer										 -   						 -   		 LSMA-3 	
+Equipment - 176	AWM/LAB/EQT/000022-5		-WhisperCool Chiller 1HP 220V/50Hz										 -   						 -   		 N0772045 	
+Equipment - 176	AWM/LAB/EQT/000022-6		#NAME?										 -   						 -   		 N0777606 	
+Equipment - 176			DISCOUNT			-96,271.50	-5,776.29	-102,047.79	20%	-19,254.30		-12,836.20	-32,090.50						-64,181.00			
+Equipment - 176						-7,241.15	-434.47	-7,675.62	20%	-1,448.23		-965.49	-2,413.72						-4,827.43			
+Equipment - 176	AWM/LAB/EQT/000023		"UV-Vis Spectrophotometer
+Lambda 365 UV/VIS Double Beam Spectrometer (Come with windows based UV Winlab V6 software), Includes:"		1	46,000.00	2,760.00	48,760.00	20%	9,200.00		6,133.33	15,333.33						30,666.67		 N4100020 	
+Equipment - 176	AWM/LAB/EQT/000023-1		"DELL Optilex PC system
+*Desktop
+*CPU
+*Keyboard"							 -   		 -   	 -   						 -   		 LSMA-1 	
+Equipment - 176	AWM/LAB/EQT/000023-2		Printer							 -   		 -   	 -   						 -   			
+Equipment - 176	AWM/LAB/EQT/000023-3		Automatic Voltage regulator							 -   		 -   	 -   						 -   		 B0160917 	
+Equipment - 176			DISCOUNT			-14,250.00	-855	-15,105.00	20%	-2,850.00		-1,900.00	-4,750.00						-9,500.00			
+Equipment - 176						-241.15	-14.47	-255.62	20%	-48.23		-32.15	-80.38						-160.77			
+Equipment - 176	AWM/LAB/EQT/000024		"Microwave Digestor
+Titan MPS Microwave Sample Preparation System (16 Position turntable), Includes:"		1	138,000.00	8,280.00	146,280.00	20%	27,600.00		18,400.00	46,000.00						92,000.00		 N3130100 	
+Equipment - 176	AWM/LAB/EQT/000024-1		-3kVA Voltage Stabilizer						20%	 -   		 -   	 -   						 -   		 LSMA 	
+Equipment - 176			DISCOUNT			-36,500.00	-2,190.00	-38,690.00	20%	-7,300.00		-4,866.67	-12,166.67						-24,333.33			
+Equipment - 176						-5,241.15	-314.47	-5,555.62	20%	-1,048.23		-698.82	-1,747.05						-3,494.10			
+Equipment - 176	AWM/LAB/EQT/000025		Milli-Q Direct 8			25,758.00	1,545.48	27,303.48	20%	5,151.60		3,434.40	8,586.00						17,172.00		 ZR0Q00800 	
+Equipment - 176	AWM/LAB/EQT/000025-1		30 Liter PE reservoir (TANKPE030)		1					 -   		 -   	 -   						 -   		 TANKPE030 	
+Equipment - 176	AWM/LAB/EQT/000026-027		Millipore Rotary Agitator 115V/60HZ		2	15,002.00	900.12	15,902.12	20%	3,000.40		2,000.27	5,000.67						10,001.33		 YT310RAHW 	
+Equipment - 176	AWM/LAB/EQT/000028		ZHE Hazardous Waste Filtration System 90mm		1	5,654.00	339.24	5,993.24	20%	1,130.80		753.87	1,884.67						3,769.33		 YT30090HW 	
+Equipment - 176	AWM/LAB/EQT/000029		"Transferpette S, Digital, 10-100UL
+Capasity : 10-100ul
+Accuracy : 0.6%,0.6ul
+Coefficient of varioation : 0.2%, 0.2ul"		1	700	42	742	20%	140		93.33	233.33						466.67			
+Equipment - 176	AWM/LAB/EQT/000030		"Transferpette S, Digital, 20-200UL
+Capasity : 20-200ul
+Accuracy : 0.6%,0.6ul
+Coefficient of varioation : 0.2%, 0.4ul"		1	700	42	742	20%	140		93.33	233.33						466.67			
+Equipment - 176	AWM/LAB/EQT/000031		"Transferpette S, Digital, 10-100UL
+Capasity : 10-100ul
+Accuracy : 0.6%,0.6ul
+Coefficient of varioation : 0.2%, 0.2ul"		1	700	42	742	20%	140		93.33	233.33						466.67			
+Equipment - 176	AWM/LAB/EQT/000032	12/6/2018	portable PH Meter		1	1,716.00	 -   	1,716.00	20%	343.2		171.6	514.8						1,201.20			
+Equipment - 176	AWM/LAB/EQT/000033-034	27/6/2018	"Hotplate Pyroceram Top 10"" x 10"" Digital
+- Temperature Range : 5 to 555 'C
+- Power Supply : 230V"		2	3,800.00	 -   	3,800.00	20%	760		380	1,140.00						2,660.00		Kumpulan Saintifik	
+Equipment - 176	AWM/LAB/EQT/000035	5/7/2018	"BOD Probe
+  -  YSI Pro OBOD Probe IDS
+DO meter
+  -   YSI MultiLab IDS YSI 4010-1"		1	10,300.50	 -   	10,300.50	20%	2,060.10		858.38	2,918.48						7,382.03			
+Equipment - 176	AWM/LAB/EQT/000036		Micropipette	Micropipette	1	393		393	20%	78.6		32.75	111.35						281.65			
+Equipment - 176	AWM/LAB/EQT/000037		Micropipette	Micropipette	1	480		480	20%	96		40	136						344			
+Equipment - 176	AWM/LAB/EQT/000038		Micropipette	Micropipette	1	480		480	20%	96		40	136						344			
+Equipment - 176	AWM/LAB/EQT/000039		Flash Point Tester Unit		1	63,209.25		63,209.25	20%	12,641.85		5,267.44	17,909.29						45,299.96			
+Equipment - 176	AWM/LAB/EQT/000040	6/9/2018	Mettler Toledo USA Stainless Weight Set (1mg-1kg)  OIML Class F1		1	3,596.25		3,596.25	20%	719.25		179.81	899.06						2,697.19		HSF Energy Sdn Bhd	
+Equipment - 176	AWM/LAB/EQT/000041	26/9/2018	Desiccator DN300 with knob Lid, with Flat Flange		1	1,113.88		1,113.88	20%	222.78		55.69	278.47						835.41		"PLT Scientific
+*PO-000092"	
+Equipment - 176	AWM/LAB/EQT/000042	18/10/2018	Desiccator DN300 with knob Lid, without Flat Flange		1	1,113.88		1,113.88	20%	222.78		55.69	278.47						835.41			
+Equipment - 176	AWM/LAB/EQT/000043	24/9/2018	"Magnetic Stirrer 7"" x 7""
+Model : ST0707V2"		1	649		649	20%	129.8		32.45	162.25						486.75		"PLT Scientific
+*PO-000105"	
+Equipment - 176	AWM/LAB/EQT/000044	24/9/2018	"Heating Mantle - 6 Rows
+*250ml, ISOLAB, Germany"		1	2,417.00		2,417.00	20%	483.4		120.85	604.25						1,812.75		"CSQ Analytics Sdn Bhd
+*PO-000097"	
+Equipment - 176	AWM/LAB/EQT/000045	24/9/2018	"Heating Mantle - 6 Rows
+*1000ml,  ISOLAB, Germany"		1	3,682.00		3,682.00	20%	736.4		184.1	920.5						2,761.50		"CSQ Analytics Sdn Bhd
+*PO-000097"	
+Equipment - 176	AWM/LAB/EQT/000046	24/9/2018	"Bath Ultrasonic Cleaner - 3lt
+*ISOLAB, Germany"		1	2,270.00		2,270.00	20%	454		113.5	567.5						1,702.50		"CSQ Analytics Sdn Bhd
+*PO-000097"	
+Equipment - 176	AWM/LAB/EQT/000047	7/9/2018	"Chamber Furnace  13L
+**Carbolite, UK"		1	16,300.00		16,300.00	20%	3,260.00		815	4,075.00						12,225.00		"Interscience Sdn Bhd
+*PO-000100"	
+Equipment - 176	AWM/LAB/EQT/000048	7/9/2018	"Waterbath with Sloping Cover
+**Memmert, Germany"		1	4,200.00		4,200.00	20%	840		210	1,050.00						3,150.00		"Interscience Sdn Bhd
+*PO-000100"	
+Equipment - 176	AWM/LAB/EQT/000049	7/9/2018	3-Place Filtration Set with Pump		1	14,000.00		14,000.00	20%	2,800.00		700	3,500.00						10,500.00		"Interscience Sdn Bhd
+*PO-000100"	
+Equipment - 176	AWM/LAB/EQT/000050	7/9/2018	"Basic Water Still W4L with Metal Heater Output : 4L/Hour
+**Favorit, Malaysia"		1	1,221.00		1,221.00	20%	244.2		61.05	305.25						915.75		"Interscience Sdn Bhd
+*PO-000100"	
+Equipment - 176	AWM/LAB/EQT/000051	12/10/2018	Bench Top pH/MC Meter		1	1,247.10		1,247.10	20%	249.42		41.57	290.99						956.11		SPER Scientific 	
+Equipment - 176	AWM/LAB/EQT/000052	12/10/2018	Sound Meter (Advanced Data logging)		1	2,158.29		2,158.29	20%	431.66		71.94	503.6						1,654.69		SPER Scientific 	
+Equipment - 176	AWM/LAB/EQT/000053	12/10/2018	Mini Env. Quality Meter (wind meter)		1	466.09		466.09	20%	93.22		15.54	108.75						357.34		SPER Scientific 	
+Equipment - 176	AWM/LAB/EQT/000054	18/10/2018	Oven Memmert,Germany		1	5,500.00		5,500.00	20%	1,100.00		183.33	1,283.33						4,216.67		"Interscience Sdn Bhd
+*PO-000100"	
+Equipment - 176	AWM/LAB/EQT/000055	18/10/2018	Oven Memmert,Germany		1	5,500.00		5,500.00	20%	1,100.00		183.33	1,283.33						4,216.67		"Interscience Sdn Bhd
+*PO-000100"	
+Equipment - 176	AWM/LAB/EQT/000056	7/9/2018	"DEPOSIT FOR : 
+C3000 Calorimeters (Isoperibol)"		1	42,225.00		42,225.00	20%	8,445.00		2,111.25	10,556.25						31,668.75		"Interscience Sdn Bhd
+*PO-000109"	
+Equipment - 176	AWM/LAB/EQT/000057		IKA Chiller (for Calorimeter)		1																	
+Equipment - 176	AWM/LAB/EQT/000058		Auto Voltage Regulator (AVR)		1																	
+Equipment - 176	AWM/LAB/EQT/000059	13/11/2018	"Precision Balance
+** A&D, Japan"		1	1,900.00		1,900.00	20%	380		63.33	443.33						1,456.67		"Interscience Sdn Bhd
+*PO-000111"	
+Equipment - 176	AWM/LAB/EQT/000060	27/11/2018	Cooled Incubator		1	10,000.00		10,000.00	20%	2,000.00		333.33	2,333.33						7,666.67			
+Equipment - 176		7/9/2018	"PROGRESS PAYMENT FOR : 
+C3000 Calorimeters (Isoperibol)"		1	70,375.00		70,375.00	20%	14,075.00		3,518.75	17,593.75						52,781.25		"Interscience Sdn Bhd
+*PO-000109"	
+Equipment - 176			IKA Chiller (for Calorimeter)		1																	
+Equipment - 176			Auto Voltage Regulator (AVR)		1																	
+Equipment - 176	AWM/LAB/EQT/000061	3/12/2018	"Micro Burette 10ml x 0.02ml Class AS, Lateral Glass Stopcock
+**Hirschmann/Germany"		1	807.5		807.5	20%	161.5		13.46	174.96						632.54			
+Equipment - 176	AWM/LAB/EQT/000062	21-Aug	Gabled Roof (Complete LID)	TE-5001-10	1	844.78		844.78	20%	168.96		 -   	56.32						788.46	" USD 200  x RM.4.2239
+ (HARM CODE : 9026900000)"	TISCH ENVIRONMENTAL	
+Equipment - 176	AWM/LAB/EQT/000063	28-Aug	Turbidity Meter	860040	1	1,350.45		1,350.45	20%	270.09		 -   	90.03						1,260.42	"USD 319.00 x RM4.2334
+(HARM CODE : 902610600) "	SPER SCIENTIFIC	
+Equipment - 176	AWM/LAB/EQT/000064	28-Aug	Dissolved Oxygen Meter Kit	850081DKOK	1	1,452.99		1,452.99	20%	290.6		 -   	96.87						1,356.12	"USD 343.22. x RM4.2334
+(HARM CODE : 902610600) "	SPER SCIENTIFIC	
+Equipment - 176	AWM/LAB/EQT/000065	28-Aug	Conductivtity Pen	850037	1	245.54		245.54	20%	49.11		 -   	16.37						229.17	"USD 58 x RM4.2334
+(HARM CODE : 902610600) "	SPER SCIENTIFIC	
+Equipment - 176	AWM/LAB/EQT/000066	14/1/2020	Certified Advanced Datalogging Sound Level Meter		2	4,462.29		4,462.29	20%	892.46									4,462.29			
+Equipment - 176	AWM/LAB/EQT/000067	25/5/2020	2.5 Retro -Fit Kit for TE-6001		1	13,414.94		13,414.94	20%										13,414.94			
+Computer	AWM/PTR/000002	1/10/2009	Printer	Canon LBP	1	1,993.00		1,993.00	20%	398.6	1,992.00	1,991.00	1,992.00						1	 ROSAK ( SERAHAN PADA AELS SEBAGAI SISA BUANGAN (WASTE) 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	1/6/2019
+Computer	AWM/PTR/000003	8/7/2011	Printer 	Canon MX3	1	428		428	20%	85.6	427	427	427						1	 ROSAK 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	1/6/2019
+Computer	AWM/PTR/000004	16/11/2011	Photocopy Machine	Canon IR2525	1	12,990.00		12,990.00	20%	2,598.00	12,989.00	15,587.00	12,989.00						1	 AWWAM TRAVEL & TOURS 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	1/8/2019
+Computer	AWM/PTR/000007	19/11/2012	Printer 	E500	1	240		240	20%	48	239	287	239						1	 ROSAK ( SERAHAN PADA AELS SEBAGAI SISA BUANGAN (WASTE) 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	1/6/2019
+Computer	AWM/PTR/000008	1/12/2014	Deskjet Printer	HP Deskjet Ink Advantage 2545 Wifi All in One Color Printer	1	232		232	20%	46.4	231	231	231						1	 ROSAK ( SERAHAN PADA AELS SEBAGAI SISA BUANGAN (WASTE) 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	1/6/2019
+Computer	AWM/PTR/000009	2/4/2013	Deskjet Printer	HP 2520 Deskjet Printer	1	389		389	20%	77.8	388	388	388						1	 ROSAK ( SERAHAN PADA AELS SEBAGAI SISA BUANGAN (WASTE) 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	1/6/2019
+Computer	AWM/PTR/000012	9/2/2017	Canon E470 AIO 	PRINTER BLACK	1	382		382	20%	76.4	63.67	140.07	216.47						165.53	 ROSAK ( SERAHAN PADA AELS SEBAGAI SISA BUANGAN (WASTE) 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	1/6/2019
+Furniture and fittings	AWM/FNF/000013	12/9/2015	Office Chair (Neco Chair) 		1	150		150	10%	15	15.1	30.1	45.1						104.9	 ROSAK 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	26/9/2019
+Furniture and fittings	AWM/FNF/000014	12/9/2015	Office Chair (Neco Chair) 		1	150		150	10%	15	15.1	30.1	45.1						104.9	 ROSAK 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	26/9/2019
+Motor vehicle	AWM/VHC/000002	11/6/2014	Mercedez Benz C230	WPU 9123	1	95,000.00	 -   	95,000.00	20%	19,000.00	76,000.00	95,000.00	94,999.00						1	 JUAL 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	29/5/2019
+Motor vehicle	AWM/VHC/000004	9/12/2015	Proton Gen 2		1	12,000.00	 -   	12,000.00		 -   			 -   						12,000.00	 JUAL 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	22/5/2018
+Motor vehicle	AWM/VHC/000005	23/6/2016	STAREX DELUXE 2.5L - VAN	WC 817 A	1	183,158.11	 -   	183,158.11	20%	36,631.62	54,947.43	91,579.05	128,210.67						54,947.44	 AWWAM TRAVEL & TOURS 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	13/3/2019
+Motor vehicle	AWM/VHC/000006	15/5/2018	Perodua Bezza 1.3 (Auto)	ALA 517	1	40,634.20	2,438.05	43,072.25	20%	8,126.84	 -   	8,126.84	16,253.68						24,380.52	 AWWAM TRAVEL & TOURS 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	13/3/2019
+Motor vehicle	AWM/VHC/000008	28/11/2018	"Perodua Axia 1.0
+q NDK 5417"		1	34,130.00		34,130.00	20%	6,826.00		6,826.00	13,652.00						20,478.00	 AWWAM TRAVEL & TOURS 	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	13/3/2019
+Equipment - 176	AWM/LAB/EQT/000003	30/1/2012	Sound Level Meters 		1	2,674.50		2,674.50	20%	534.9			2,673.50						1	SPER SCIENTIFIC LTD	 Disposed / Dilupuskan – Aset telah dijual, dibuang, atau dipindah milik. 	30/1/2020
+						9,656,769.22	71,670.34	9,695,040.55		897,992.55	960,711.26	1,687,181.93	2,444,419.12	 -   	 -   	 -   	 -   	 -   	7,232,718.09			
