@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Senarai Aset</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      background: #ffcc00;
+    }
+    tr:nth-child(even) {
+      background: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Senarai Aset</h1>
+  <table id="assetTable">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Papaparse untuk baca CSV -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <script>
+    // Baca fail CSV dalam repo
+    Papa.parse("aset.csv", {
+      download: true,
+      header: true,
+      complete: function(results) {
+        let data = results.data;
+        let table = document.getElementById("assetTable");
+
+        // Buat header table
+        let headers = Object.keys(data[0]);
+        let thead = "<tr>";
+        headers.forEach(h => { thead += "<th>" + h + "</th>"; });
+        thead += "</tr>";
+        table.querySelector("thead").innerHTML = thead;
+
+        // Isi data
+        let rows = "";
+        data.forEach(row => {
+          rows += "<tr>";
+          headers.forEach(h => {
+            rows += "<td>" + (row[h] || "") + "</td>";
+          });
+          rows += "</tr>";
+        });
+        table.querySelector("tbody").innerHTML = rows;
+      }
+    });
+  </script>
+</body>
+</html>
