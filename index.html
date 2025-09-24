@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Senarai Aset</title>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,49 +19,43 @@
     }
     table {
       width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-      font-size: 14px;
-    }
-    th {
-      background: #ffcc00;
-    }
-    tr:nth-child(even) {
-      background: #f2f2f2;
     }
   </style>
 </head>
 <body>
   <h1>Senarai Aset</h1>
-  <table id="assetTable">
+  <table id="assetTable" class="display nowrap" style="width:100%">
     <thead></thead>
     <tbody></tbody>
   </table>
 
-  <!-- Papaparse untuk baca CSV -->
+  <!-- jQuery + DataTables + PapaParse -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+
   <script>
-    // Baca fail CSV dalam repo
+    // Load CSV
     Papa.parse("aset.csv", {
       download: true,
       header: true,
       complete: function(results) {
         let data = results.data;
-        let table = document.getElementById("assetTable");
-
-        // Buat header table
         let headers = Object.keys(data[0]);
+
+        // Build header
         let thead = "<tr>";
         headers.forEach(h => { thead += "<th>" + h + "</th>"; });
         thead += "</tr>";
-        table.querySelector("thead").innerHTML = thead;
+        document.querySelector("#assetTable thead").innerHTML = thead;
 
-        // Isi data
+        // Build rows
         let rows = "";
         data.forEach(row => {
           rows += "<tr>";
@@ -66,7 +64,30 @@
           });
           rows += "</tr>";
         });
-        table.querySelector("tbody").innerHTML = rows;
+        document.querySelector("#assetTable tbody").innerHTML = rows;
+
+        // Init DataTable
+        let table = $('#assetTable').DataTable({
+          dom: 'Bfrtip',
+          buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+          pageLength: 10
+        });
+
+        // Buat dropdown filter untuk "Kategori" dan "Tahun"
+        table.columns().every(function() {
+          let column = this;
+          if (column.index() === 0 || column.index() === 2) { // contoh: 0 = Asset, 2 = Tahun/Date
+            let select = $('<select><option value="">All</option></select>')
+              .appendTo($(column.header()))
+              .on('change', function() {
+                let val = $.fn.dataTable.util.escapeRegex($(this).val());
+                column.search(val ? '^' + val + '$' : '', true, false).draw();
+              });
+            column.data().unique().sort().each(function(d) {
+              if (d) select.append('<option value="' + d + '">' + d + '</option>');
+            });
+          }
+        });
       }
     });
   </script>
