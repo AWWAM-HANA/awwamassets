@@ -34,9 +34,7 @@
     }
     th {
       background-color: #00aaff; /* biru terang */
-      color: #fff;
-      position: sticky;
-      top: 0;
+      color: #000; /* teks hitam */
       padding: 8px 12px;
       text-align: left;
     }
@@ -130,7 +128,7 @@
           dom: 'Bfrtip',
           buttons: ['copy','csv','excel','pdf','print'],
           pageLength: 10,
-          lengthMenu: [10,50,100],
+          lengthMenu: [10,50,1000],
           scrollX: true,
           fixedHeader: true,
           pagingType: 'simple', // hanya Previous / Next
@@ -141,7 +139,7 @@
             };
             let formatRM = new Intl.NumberFormat('ms-MY', { style: 'currency', currency: 'MYR' }).format;
 
-            // Column indexes to total: NETT PRICE, GST, TOTAL, DEPR, ACC DEPR, NBV
+            // Total semua column angka
             let columnsToTotal = [5,6,7,8,9,10];
             columnsToTotal.forEach(function(idx){
               let sum = api.column(idx,{ page:'current' }).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
@@ -150,10 +148,13 @@
           }
         });
 
+        // Adjust columns after table is rendered to align footer
+        table.columns.adjust();
+
         // Global search placeholder
         $('#assetTable_filter input').attr('placeholder','Cari aset...');
 
-        // Dropdown filter ikut Asset Name (column 0)
+        // Dropdown filter Asset Name (column 0)
         table.columns([0]).every(function() {
           let column = this;
           let select = $('<select><option value="">All</option></select>')
@@ -161,6 +162,7 @@
             .on('change', function() {
               let val = $.fn.dataTable.util.escapeRegex($(this).val());
               column.search(val ? '^'+val+'$' : '', true, false).draw();
+              table.columns.adjust(); // adjust again after filter
             });
           column.data().unique().sort().each(function(d){ if(d) select.append('<option value="'+d+'">'+d+'</option>'); });
         });
