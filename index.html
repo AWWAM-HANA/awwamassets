@@ -17,11 +17,43 @@
       text-align: center;
       color: #333;
     }
+    h3 {
+      text-align: center;
+      color: #555;
+      margin-top: 0;
+      font-weight: normal;
+    }
     table {
       width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th {
+      background-color: #00aaff; /* biru terang */
+      color: #fff;
+      position: sticky;
+      top: 0;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    td {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
     }
     tfoot th {
+      background-color: #f1f1f1;
+      font-weight: bold;
       text-align: right;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #ffeeba;
     }
     select {
       width: 100%;
@@ -29,7 +61,9 @@
   </style>
 </head>
 <body>
-  <h1>Senarai Aset</h1>
+  <h1>Senarai Aset Syarikat</h1>
+  <h3>Data terkini sehingga September 2025</h3>
+
   <table id="assetTable" class="display nowrap" style="width:100%">
     <thead></thead>
     <tbody></tbody>
@@ -96,8 +130,10 @@
           dom: 'Bfrtip',
           buttons: ['copy','csv','excel','pdf','print'],
           pageLength: 10,
+          lengthMenu: [10,50,100],
           scrollX: true,
           fixedHeader: true,
+          pagingType: 'simple', // hanya Previous / Next
           footerCallback: function(row, data, start, end, display) {
             let api = this.api();
             let parseValue = function(i) {
