@@ -6,11 +6,7 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background: #f9f9f9;
-    }
+    body { font-family: Arial, sans-serif; margin:20px; background:#f9f9f9; }
     h1 { text-align:center; color:#333; }
     h3 { text-align:center; color:#555; margin-top:0; font-weight:normal; }
     table { width:100%; border-collapse:collapse; margin-top:10px; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.05); border-radius:8px; overflow:hidden; }
@@ -20,8 +16,7 @@
     tr:nth-child(even){ background:#f9f9f9; }
     tr:hover{ background:#ffeeba; }
     select{ width:100%; }
-    /* hide numeric buttons, keep dropdown page length */
-    .dataTables_paginate .paginate_button { display: none; }
+    .dataTables_paginate .paginate_button { display: none; } /* hide Previous/Next numeric buttons */
   </style>
 </head>
 <body>
@@ -84,7 +79,10 @@
           pageLength:50,
           lengthMenu:[[50,100,500,1000],[50,100,500,1000]],
           paging:true,
-          pagingType:'simple', // Previous/Next hilang numeric via CSS
+          pagingType:'simple',
+          language: {
+            info: "Showing _MENU_ of _TOTAL_ entries" // _MENU_ = dropdown
+          },
           footerCallback:function(row,data,start,end,display){
             let api=this.api();
             let parseValue=i=>typeof i==='string'?parseFloat(i.replace(/[^0-9.-]+/g,''))||0:typeof i==='number'?i:0;
