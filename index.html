@@ -36,7 +36,7 @@
     <tfoot>
       <tr>
         <th></th> <!-- Asset -->
-        <th></th> <!-- Jenis Aset -->
+        <th></th> <!-- Kategori / Jenis Aset -->
         <th></th> <!-- Tahun -->
         <th></th> <!-- Item -->
         <th></th> <!-- Detail -->
@@ -116,8 +116,8 @@
         // Global search placeholder
         $('#assetTable_filter input').attr('placeholder', 'Cari aset...');
 
-        // Dropdown filter ikut Jenis Aset (contoh: column 1 = Jenis Aset)
-        table.columns([1,2]).every(function() {
+        // Dropdown filter ikut **Asset Name** (column 0)
+        table.columns([0]).every(function() {
           let column = this;
           let select = $('<select><option value="">All</option></select>')
             .appendTo($(column.header()).empty())
