@@ -1,0 +1,11 @@
+﻿ Asset  , CODE ,DATE,ITEM,DETAIL/SPECIFICATION,UNIT, NETT PRICE , GST , TOTAL ,RATE, DEPR. ," ACC. DEPR
+2017 "," ACC. DEPR
+2018 "," ACC. DEPR
+2019 ", NBV 2019 , SERIAL NO / PO NO , REMARKS ,
+Building,AWN/BDG/000001,20/5/2014,1 1/2 Storey Terrace Factories,"No. 176, Jalan S2 C9, Seksyen C, Green Technology Park, Seremban 2, 70300 Seremban, Negeri Sembilan, DK",1," 763,610.00 ", -   ," 763,610.00 ",2%," 15,272.20 "," 53,452.70 "," 68,724.90 "," 83,997.10 "," 679,612.90 ",,,
+Building,AWN/BDG/000002,1/9/2014,2 Storey Shop Office,"No 55, Jalan S2 B18, Pusat Dagangan Seremban 2,
+70300 Seremban, Negeri Sembilan",1," 987,810.00 ", -   ," 987,839.00 ",2%," 19,756.78 "," 65,855.16 "," 85,611.94 "," 105,368.72 "," 882,470.28 ",,,
+Building,,,,,, 29.00 ,,,,,,,,,,,
+Building,AWN/BDG/000003,2017/2018,"1-3 Storey Link Industrial Building, Gravitas","No.11, Jalan 22/6, Seksyen 22, Shah Alam, Selangor, DE",1," 2,584,000.00 ", -   ," 2,584,000.00 ",2%," 51,680.00 ", -   ,," 51,680.00 "," 2,532,320.00 ",,,
+Building,AWN/BDG/000004,20/6/2019,Single Storey Terrace House,"No. 978, Jalan S2 G19, Garden Avenue, 70300 Seremban, Negeri Sembilan",1," 230,000.00 ", -   ," 230,000.00 ",2%," 4,600.00 ", -   , -   ," 2,300.00 "," 227,700.00 ",,,
+,,,,,4," 4,565,449.00 ", -   ," 4,565,449.00 ",," 91,308.98 "," 119,307.86 "," 154,336.84 "," 243,345.82 "," 4,322,103.18 ",, -   ,
