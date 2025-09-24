@@ -54,26 +54,28 @@ Papa.parse("aset.csv", {
     let data = results.data.filter(row => Object.values(row).some(val => val.trim() !== ""));
     let headers = Object.keys(data[0]);
 
-    // Build header
-    let thead = "<tr>"; headers.forEach(h=>thead+="<th>"+h+"</th>"); thead+="</tr>";
+    // Build table header
+    let thead = "<tr>";
+    headers.forEach(h => thead += "<th>" + h + "</th>");
+    thead += "</tr>";
     document.querySelector("#assetTable thead").innerHTML = thead;
 
-    // Build body
+    // Build table body
     let rows = "";
-    data.forEach(row=>{
-      rows+="<tr>";
-      headers.forEach(h=>{
+    data.forEach(row => {
+      rows += "<tr>";
+      headers.forEach(h => {
         if(["NETT PRICE","GST","TOTAL","DEPR","ACC DEPR","NBV"].includes(h)){
-          let val=parseFloat(row[h].replace(/,/g,''))||0;
-          rows+="<td>"+new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format(val)+"</td>";
-        } else rows+="<td>"+(row[h]||"")+"</td>";
+          let val = parseFloat(row[h].replace(/,/g,''))||0;
+          rows += "<td>"+new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format(val)+"</td>";
+        } else rows += "<td>"+(row[h]||"")+"</td>";
       });
-      rows+="</tr>";
+      rows += "</tr>";
     });
-    document.querySelector("#assetTable tbody").innerHTML=rows;
+    document.querySelector("#assetTable tbody").innerHTML = rows;
 
     // Initialize DataTable
-    let table=$('#assetTable').DataTable({
+    let table = $('#assetTable').DataTable({
       dom:'Bfrtip',
       buttons:['copy','csv','excel','pdf','print'],
       scrollX:true,
@@ -81,7 +83,6 @@ Papa.parse("aset.csv", {
       pageLength:100,
       lengthMenu:[[50,100,500,1000],[50,100,500,1000]],
       paging:true,
-      pagingType:'simple',
       language: { info: "Showing _MENU_ of _TOTAL_ entries" },
       footerCallback:function(row,data,start,end,display){
         let api=this.api();
@@ -89,7 +90,7 @@ Papa.parse("aset.csv", {
         let formatRM=new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format;
         let cols=[5,6,7,8,9,10];
         cols.forEach(idx=>{
-          let sum=api.column(idx,{page:'current'}).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
+          let sum = api.column(idx,{page:'current'}).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
           $(api.column(idx).footer()).html(formatRM(sum));
         });
         api.columns.adjust();
@@ -109,13 +110,12 @@ Papa.parse("aset.csv", {
           column.search(val?'^'+val+'$':'',true,false).draw();
           table.columns.adjust();
         });
-      column.data().unique().sort().each(d=>{if(d)select.append('<option value="'+d+'">'+d+'</option>');});
+      column.data().unique().sort().each(d=>{ if(d) select.append('<option value="'+d+'">'+d+'</option>'); });
     });
 
     table.columns.adjust();
   }
 });
 </script>
-
 </body>
 </html>
