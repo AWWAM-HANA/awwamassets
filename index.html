@@ -16,7 +16,8 @@
     tr:nth-child(even){ background:#f9f9f9; }
     tr:hover{ background:#ffeeba; }
     select{ width:100%; }
-    .dataTables_paginate .paginate_button { display: none; } /* hide Previous/Next numeric buttons */
+    /* hide numeric pagination buttons */
+    .dataTables_paginate .paginate_button { display: none; }
   </style>
 </head>
 <body>
@@ -81,7 +82,7 @@
           paging:true,
           pagingType:'simple',
           language: {
-            info: "Showing _MENU_ of _TOTAL_ entries" // _MENU_ = dropdown
+            info: "Showing _MENU_ of _TOTAL_ entries" // _MENU_ = dropdown, _TOTAL_ = jumlah baris
           },
           footerCallback:function(row,data,start,end,display){
             let api=this.api();
