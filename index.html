@@ -20,6 +20,12 @@
     table {
       width: 100%;
     }
+    tfoot th {
+      text-align: right;
+    }
+    select {
+      width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -27,6 +33,14 @@
   <table id="assetTable" class="display nowrap" style="width:100%">
     <thead></thead>
     <tbody></tbody>
+    <tfoot>
+      <tr>
+        <th colspan="5" style="text-align:right">Total:</th>
+        <th></th> <!-- NETT PRICE -->
+        <th></th> <!-- GST -->
+        <th></th> <!-- TOTAL -->
+      </tr>
+    </tfoot>
   </table>
 
   <!-- jQuery + DataTables + PapaParse -->
@@ -46,7 +60,7 @@
       download: true,
       header: true,
       complete: function(results) {
-        let data = results.data;
+        let data = results.data.filter(row => Object.values(row).some(val => val.trim() !== ""));
         let headers = Object.keys(data[0]);
 
         // Build header
@@ -59,8 +73,14 @@
         let rows = "";
         data.forEach(row => {
           rows += "<tr>";
-          headers.forEach(h => {
-            rows += "<td>" + (row[h] || "") + "</td>";
+          headers.forEach(h => { 
+            // Format NETT PRICE, GST, TOTAL with RM
+            if(h === "NETT PRICE" || h === "GST" || h === "TOTAL") {
+              let val = parseFloat(row[h].replace(/,/g,'')) || 0;
+              rows += "<td>" + new Intl.NumberFormat('ms-MY', { style: 'currency', currency: 'MYR' }).format(val) + "</td>";
+            } else {
+              rows += "<td>" + (row[h] || "") + "</td>";
+            }
           });
           rows += "</tr>";
         });
@@ -70,23 +90,46 @@
         let table = $('#assetTable').DataTable({
           dom: 'Bfrtip',
           buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
-          pageLength: 10
+          pageLength: 10,
+          scrollX: true,
+          fixedHeader: true,
+          footerCallback: function(row, data, start, end, display) {
+            let api = this.api();
+
+            // Convert string to float
+            let parseValue = function(i) {
+              return typeof i === 'string' ?
+                parseFloat(i.replace(/[^0-9.-]+/g,"")) || 0 :
+                typeof i === 'number' ? i : 0;
+            };
+
+            // Format RM
+            let formatRM = new Intl.NumberFormat('ms-MY', { style: 'currency', currency: 'MYR' }).format;
+
+            // Column index: sesuaikan dengan CSV
+            let nettTotal = api.column(5, { page: 'current' }).data().reduce((a, b) => parseValue(a) + parseValue(b), 0);
+            let gstTotal = api.column(6, { page: 'current' }).data().reduce((a, b) => parseValue(a) + parseValue(b), 0);
+            let totalTotal = api.column(7, { page: 'current' }).data().reduce((a, b) => parseValue(a) + parseValue(b), 0);
+
+            $(api.column(5).footer()).html(formatRM(nettTotal));
+            $(api.column(6).footer()).html(formatRM(gstTotal));
+            $(api.column(7).footer()).html(formatRM(totalTotal));
+          }
         });
 
-        // Buat dropdown filter untuk "Kategori" dan "Tahun"
-        table.columns().every(function() {
+        // Global search placeholder
+        $('#assetTable_filter input').attr('placeholder', 'Cari aset...');
+
+        // Dropdown filter untuk Kategori & Tahun
+        table.columns([1,2]).every(function() {
           let column = this;
-          if (column.index() === 0 || column.index() === 2) { // contoh: 0 = Asset, 2 = Tahun/Date
-            let select = $('<select><option value="">All</option></select>')
-              .appendTo($(column.header()))
-              .on('change', function() {
-                let val = $.fn.dataTable.util.escapeRegex($(this).val());
-                column.search(val ? '^' + val + '$' : '', true, false).draw();
-              });
-            column.data().unique().sort().each(function(d) {
-              if (d) select.append('<option value="' + d + '">' + d + '</option>');
+          let select = $('<select><option value="">All</option></select>')
+            .appendTo($(column.header()).empty())
+            .on('change', function() {
+              let val = $.fn.dataTable.util.escapeRegex($(this).val());
+              column.search(val ? '^'+val+'$' : '', true, false).draw();
             });
-          }
+          column.data().unique().sort().each(function(d){ if(d) select.append('<option value="'+d+'">'+d+'</option>'); });
         });
       }
     });
