@@ -20,6 +20,8 @@
     tr:nth-child(even){ background:#f9f9f9; }
     tr:hover{ background:#ffeeba; }
     select{ width:100%; }
+    /* hide numeric buttons, keep dropdown page length */
+    .dataTables_paginate .paginate_button { display: none; }
   </style>
 </head>
 <body>
@@ -55,11 +57,11 @@
         let data = results.data.filter(row => Object.values(row).some(val => val.trim() !== ""));
         let headers = Object.keys(data[0]);
 
-        // Table header
+        // Build table header
         let thead = "<tr>"; headers.forEach(h=>thead+="<th>"+h+"</th>"); thead+="</tr>";
         document.querySelector("#assetTable thead").innerHTML = thead;
 
-        // Table body
+        // Build table body
         let rows = "";
         data.forEach(row=>{
           rows+="<tr>";
@@ -77,12 +79,12 @@
         let table=$('#assetTable').DataTable({
           dom:'Bfrtip',
           buttons:['copy','csv','excel','pdf','print'],
-          pageLength:100,
-          lengthMenu:[[100,500,1000],[100,500,1000]],
           scrollX:true,
           fixedHeader:true,
-          paging:true,      // paging ON
-          pagingType:'simple_numbers', // tapi kita hide numeric
+          pageLength:50,
+          lengthMenu:[[50,100,500,1000],[50,100,500,1000]],
+          paging:true,
+          pagingType:'simple', // Previous/Next hilang numeric via CSS
           footerCallback:function(row,data,start,end,display){
             let api=this.api();
             let parseValue=i=>typeof i==='string'?parseFloat(i.replace(/[^0-9.-]+/g,''))||0:typeof i==='number'?i:0;
@@ -95,9 +97,6 @@
             api.columns.adjust();
           }
         });
-
-        // Hide Previous/Next & numeric buttons
-        $('#assetTable_paginate').hide();
 
         // Global search placeholder
         $('#assetTable_filter input').attr('placeholder','Cari aset...');
