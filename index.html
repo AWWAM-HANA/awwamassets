@@ -3,59 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Senarai Aset</title>
-  <!-- DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
-
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
       background: #f9f9f9;
     }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    h3 {
-      text-align: center;
-      color: #555;
-      margin-top: 0;
-      font-weight: normal;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    th {
-      background-color: #00aaff; /* biru terang */
-      color: #000; /* teks hitam */
-      padding: 8px 12px;
-      text-align: left;
-    }
-    td {
-      padding: 8px 12px;
-      border: 1px solid #ddd;
-    }
-    tfoot th {
-      background-color: #f1f1f1;
-      font-weight: bold;
-      text-align: right;
-    }
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    tr:hover {
-      background-color: #ffeeba;
-    }
-    select {
-      width: 100%;
-    }
+    h1 { text-align:center; color:#333; }
+    h3 { text-align:center; color:#555; margin-top:0; font-weight:normal; }
+    table { width:100%; border-collapse:collapse; margin-top:10px; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.05); border-radius:8px; overflow:hidden; }
+    th { background:#00aaff; color:#000; padding:8px 12px; text-align:left; }
+    td { padding:8px 12px; border:1px solid #ddd; }
+    tfoot th { background:#f1f1f1; font-weight:bold; text-align:right; }
+    tr:nth-child(even){ background:#f9f9f9; }
+    tr:hover{ background:#ffeeba; }
+    select{ width:100%; }
   </style>
 </head>
 <body>
@@ -64,25 +28,15 @@
 
   <table id="assetTable" class="display nowrap" style="width:100%">
     <thead></thead>
-    <tbody></tbody>
     <tfoot>
       <tr>
-        <th></th> <!-- Asset -->
-        <th></th> <!-- Asset Name -->
-        <th></th> <!-- Tahun -->
-        <th></th> <!-- Item -->
-        <th></th> <!-- Detail -->
-        <th></th> <!-- NETT PRICE -->
-        <th></th> <!-- GST -->
-        <th></th> <!-- TOTAL -->
-        <th></th> <!-- DEPR -->
-        <th></th> <!-- ACC DEPR -->
-        <th></th> <!-- NBV -->
+        <th></th><th></th><th></th><th></th><th></th>
+        <th></th><th></th><th></th><th></th><th></th><th></th>
       </tr>
     </tfoot>
+    <tbody></tbody>
   </table>
 
-  <!-- jQuery + DataTables + PapaParse -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
@@ -101,71 +55,67 @@
         let data = results.data.filter(row => Object.values(row).some(val => val.trim() !== ""));
         let headers = Object.keys(data[0]);
 
-        // Build table header
-        let thead = "<tr>";
-        headers.forEach(h => { thead += "<th>" + h + "</th>"; });
-        thead += "</tr>";
+        // Table header
+        let thead = "<tr>"; headers.forEach(h=>thead+="<th>"+h+"</th>"); thead+="</tr>";
         document.querySelector("#assetTable thead").innerHTML = thead;
 
-        // Build table body
+        // Table body
         let rows = "";
-        data.forEach(row => {
-          rows += "<tr>";
-          headers.forEach(h => { 
-            if(["NETT PRICE","GST","TOTAL","DEPR","ACC DEPR","NBV"].includes(h)) {
-              let val = parseFloat(row[h].replace(/,/g,'')) || 0;
-              rows += "<td>" + new Intl.NumberFormat('ms-MY', { style: 'currency', currency: 'MYR' }).format(val) + "</td>";
-            } else {
-              rows += "<td>" + (row[h] || "") + "</td>";
-            }
+        data.forEach(row=>{
+          rows+="<tr>";
+          headers.forEach(h=>{
+            if(["NETT PRICE","GST","TOTAL","DEPR","ACC DEPR","NBV"].includes(h)){
+              let val=parseFloat(row[h].replace(/,/g,''))||0;
+              rows+="<td>"+new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format(val)+"</td>";
+            }else rows+="<td>"+(row[h]||"")+"</td>";
           });
-          rows += "</tr>";
+          rows+="</tr>";
         });
-        document.querySelector("#assetTable tbody").innerHTML = rows;
+        document.querySelector("#assetTable tbody").innerHTML=rows;
 
         // Initialize DataTable
-        let table = $('#assetTable').DataTable({
-          dom: 'Bfrtip',
-          buttons: ['copy','csv','excel','pdf','print'],
-          pageLength: 10,
-          lengthMenu: [10,50,1000],
-          scrollX: true,
-          fixedHeader: true,
-          pagingType: 'simple', // hanya Previous / Next
-          footerCallback: function(row, data, start, end, display) {
-            let api = this.api();
-            let parseValue = function(i) {
-              return typeof i === 'string' ? parseFloat(i.replace(/[^0-9.-]+/g,"")) || 0 : typeof i === 'number' ? i : 0;
-            };
-            let formatRM = new Intl.NumberFormat('ms-MY', { style: 'currency', currency: 'MYR' }).format;
-
-            // Total semua column angka
-            let columnsToTotal = [5,6,7,8,9,10];
-            columnsToTotal.forEach(function(idx){
-              let sum = api.column(idx,{ page:'current' }).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
+        let table=$('#assetTable').DataTable({
+          dom:'Bfrtip',
+          buttons:['copy','csv','excel','pdf','print'],
+          pageLength:100,
+          lengthMenu:[[100,500,1000],[100,500,1000]],
+          scrollX:true,
+          fixedHeader:true,
+          paging:true,      // paging ON
+          pagingType:'simple_numbers', // tapi kita hide numeric
+          footerCallback:function(row,data,start,end,display){
+            let api=this.api();
+            let parseValue=i=>typeof i==='string'?parseFloat(i.replace(/[^0-9.-]+/g,''))||0:typeof i==='number'?i:0;
+            let formatRM=new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format;
+            let cols=[5,6,7,8,9,10];
+            cols.forEach(idx=>{
+              let sum=api.column(idx,{page:'current'}).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
               $(api.column(idx).footer()).html(formatRM(sum));
             });
+            api.columns.adjust();
           }
         });
 
-        // Adjust columns after table is rendered to align footer
-        table.columns.adjust();
+        // Hide Previous/Next & numeric buttons
+        $('#assetTable_paginate').hide();
 
         // Global search placeholder
         $('#assetTable_filter input').attr('placeholder','Cari aset...');
 
         // Dropdown filter Asset Name (column 0)
-        table.columns([0]).every(function() {
-          let column = this;
-          let select = $('<select><option value="">All</option></select>')
+        table.columns([0]).every(function(){
+          let column=this;
+          let select=$('<select><option value="">All</option></select>')
             .appendTo($(column.header()).empty())
-            .on('change', function() {
-              let val = $.fn.dataTable.util.escapeRegex($(this).val());
-              column.search(val ? '^'+val+'$' : '', true, false).draw();
-              table.columns.adjust(); // adjust again after filter
+            .on('change',function(){
+              let val=$.fn.dataTable.util.escapeRegex($(this).val());
+              column.search(val?'^'+val+'$':'',true,false).draw();
+              table.columns.adjust();
             });
-          column.data().unique().sort().each(function(d){ if(d) select.append('<option value="'+d+'">'+d+'</option>'); });
+          column.data().unique().sort().each(d=>{if(d)select.append('<option value="'+d+'">'+d+'</option>');});
         });
+
+        table.columns.adjust();
       }
     });
   </script>
