@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Senarai Aset</title>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+<style>
+  body { font-family: Calibri, Arial, sans-serif; margin:20px; background:#f9f9f9; }
+  h1 { text-align:center; color:#333; margin-bottom:6px; }
+  h3 { text-align:center; color:#555; margin-top:0; font-weight:normal; }
+  .toolbar {
+    display:flex; gap:12px; align-items:center; justify-content:space-between;
+    max-width:1200px; margin:16px auto 0; flex-wrap:wrap;
+  }
+  .toolbar .group { display:flex; gap:8px; align-items:center; }
+  .toolbar label { font-weight:bold; color:#444; }
+  .toolbar input[type="search"], .toolbar select {
+    padding:8px 10px; border:1px solid #ccc; border-radius:6px; background:#fff;
+  }
+  table { width:100%; border-collapse:collapse; margin-top:10px; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.05); border-radius:8px; overflow:hidden; }
+  th { background:#00aaff; color:#000; padding:8px 12px; text-align:left; }
+  td { padding:8px 12px; border:1px solid #ddd; }
+  tfoot th { background:#f1f1f1; font-weight:bold; text-align:right; }
+  tr:nth-child(even){ background:#f9f9f9; }
+  tr:hover{ background:#ffeeba; }
+  /* hide only numeric pagination buttons, keep Prev/Next visible */
+  .dataTables_paginate .paginate_button:not(.previous):not(.next) { display:none; }
+</style>
+</head>
+<body>
+
+<h1>Senarai Aset Syarikat</h1>
+<h3>Data terkini sehingga September 2025</h3>
+
+<div class="toolbar">
+  <div class="group">
+    <label for="globalSearch">Cari:</label>
+    <input id="globalSearch" type="search" placeholder="Cari aset, kod, detail…" />
+  </div>
+  <div class="group">
+    <label for="assetFilter">Tapis Nama Aset:</label>
+    <select id="assetFilter">
+      <option value="">Semua</option>
+    </select>
+  </div>
+</div>
+
+<table id="assetTable" class="display nowrap" style="width:100%">
+  <thead>
+    <tr>
+      <th>Asset Name</th><th>Code</th><th>Tahun</th><th>Detail</th><th>Unit</th>
+      <th>NETT PRICE</th><th>GST</th><th>TOTAL</th><th>DEPR</th><th>ACC DEPR</th><th>NBV</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th colspan="5">Jumlah (paparan semasa)</th>
+      <th></th><th></th><th></th><th></th><th></th><th></th>
+    </tr>
+  </tfoot>
+  <tbody></tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+
+<script>
+(function(){
+  // Fixed column order we expect in the CSV (must match the table header)
+  const COLS = [
+    "Asset Name","Code","Tahun","Detail","Unit",
+    "NETT PRICE","GST","TOTAL","DEPR","ACC DEPR","NBV"
+  ];
+
+  const isMoney = new Set(["NETT PRICE","GST","TOTAL","DEPR","ACC DEPR","NBV"]);
+  const fmtMYR  = (n)=> new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format(n ?? 0);
+
+  // Debounce helper for search
+  function debounce(fn, delay=250){
+    let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args), delay); };
+  }
+
+  Papa.parse("aset.csv", {
+    download: true,
+    header: true,
+    skipEmptyLines: 'greedy',
+    complete: function(res){
+      // Clean rows (drop fully empty)
+      const data = (res.data || []).filter(r=>{
+        return Object.values(r).some(v => (v ?? "").toString().trim() !== "");
+      });
+
+      // Build tbody with strict column order and formatting
+      const tbody = document.querySelector("#assetTable tbody");
+      const frag = document.createDocumentFragment();
+
+      data.forEach(row=>{
+        const tr = document.createElement("tr");
+        COLS.forEach(h=>{
+          let raw = (row[h] ?? "").toString().trim();
+
+          if(isMoney.has(h)){
+            // normalize number (strip commas/currency)
+            const num = parseFloat(raw.replace(/[^0-9.-]/g,'')) || 0;
+            tr.insertAdjacentHTML("beforeend", `<td data-num="${num}">${fmtMYR(num)}</td>`);
+          }else{
+            tr.insertAdjacentHTML("beforeend", `<td>${raw}</td>`);
+          }
+        });
+        frag.appendChild(tr);
+      });
+
+      tbody.innerHTML = "";
+      tbody.appendChild(frag);
+
+      // Init DataTable
+      const table = $('#assetTable').DataTable({
+        dom: 'Bfrtip',
+        buttons: ['copy','csv','excel','pdf','print'],
+        scrollX: true,
+        fixedHeader: true,
+        pageLength: 100,
+        lengthMenu: [[50,100,500,1000],[50,100,500,1000]],
+        paging: true,
+        // keep the default built-in search UI too (works alongside our custom globalSearch)
+        language: {
+          search: "Carian pantas:",
+          info: "Memaparkan _START_–_END_ daripada _TOTAL_ rekod",
+          lengthMenu: "Setiap halaman _MENU_ rekod",
+          infoEmpty: "Tiada rekod",
+          zeroRecords: "Tiada padanan ditemui",
+          infoFiltered: "(ditapis daripada _MAX_ jumlah rekod)"
+        },
+        footerCallback: function(row, data, start, end, display){
+          const api = this.api();
+          const cols = [5,6,7,8,9,10]; // money columns by index
+          cols.forEach(idx=>{
+            // Sum current page values using data-num attribute if available
+            let sum = 0;
+            api.column(idx, {page:'current'}).nodes().each(td=>{
+              const v = parseFloat(td.getAttribute('data-num') || td.textContent.replace(/[^0-9.-]/g,'')) || 0;
+              sum += v;
+            });
+            $(api.column(idx).footer()).html(fmtMYR(sum));
+          });
+        }
+      });
+
+      // Improve placeholder on built-in search
+      $('#assetTable_filter input').attr('placeholder','Cari aset… (global)');
+
+      // Custom Global Search (outside DataTables input) with debounce
+      const doSearch = debounce(val => table.search(val).draw(), 250);
+      document.getElementById('globalSearch').addEventListener('input', (e)=>{
+        doSearch(e.target.value);
+      });
+
+      // Populate Asset Name filter (column 0)
+      const assetSelect = document.getElementById('assetFilter');
+      const col0Data = table.column(0).data().toArray();
+      const uniqueNames = Array.from(new Set(col0Data.filter(Boolean))).sort((a,b)=>a.localeCompare(b,'ms'));
+      uniqueNames.forEach(name=>{
+        const opt = document.createElement('option');
+        opt.value = name; opt.textContent = name;
+        assetSelect.appendChild(opt);
+      });
+      assetSelect.addEventListener('change', function(){
+        const val = this.value;
+        if(!val){ table.column(0).search('').draw(); }
+        else{ table.column(0).search('^'+$.fn.dataTable.util.escapeRegex(val)+'$', true, false).draw(); }
+      });
+
+      // Adjust columns after everything is set
+      table.columns.adjust();
+    },
+    error: function(err){
+      console.error('CSV parse error', err);
+      alert('Tidak dapat memuatkan fail aset.csv');
+    }
+  });
+})();
+</script>
+</body>
+</html>
