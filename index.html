@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
 <style>
-body { font-family: Calibri, Arial, sans-serif; margin:20px; background:#f9f9f9; }
+body { font-family: Arial, sans-serif; margin:20px; background:#f9f9f9; }
 h1 { text-align:center; color:#333; }
 h3 { text-align:center; color:#555; margin-top:0; font-weight:normal; }
 table { width:100%; border-collapse:collapse; margin-top:10px; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.05); border-radius:8px; overflow:hidden; }
@@ -26,15 +26,10 @@ select{ width:100%; }
 <h3>Data terkini sehingga September 2025</h3>
 
 <table id="assetTable" class="display nowrap" style="width:100%">
-<thead>
-<tr>
-<th>Asset Name</th><th>Code</th><th>Tahun</th><th>Detail</th><th>Unit</th>
-<th>NETT PRICE</th><th>GST</th><th>TOTAL</th><th>DEPR</th><th>ACC DEPR</th><th>NBV</th>
-</tr>
-</thead>
+<thead></thead>
 <tfoot>
 <tr>
-<th colspan="5">Total</th>
+<th></th><th></th><th></th><th></th><th></th>
 <th></th><th></th><th></th><th></th><th></th><th></th>
 </tr>
 </tfoot>
@@ -55,24 +50,31 @@ select{ width:100%; }
 Papa.parse("aset.csv", {
   download: true,
   header: true,
-  complete: function(results){
-    let data = results.data.filter(r=>Object.values(r).some(v=>v.trim()!==""));
-    
-    // populate tbody only, jangan overwrite thead
-    let rows="";
-    data.forEach(row=>{
-      rows+="<tr>";
-      Object.keys(row).forEach(h=>{
-        let val = ["NETT PRICE","GST","TOTAL","DEPR","ACC DEPR","NBV"].includes(h)
-          ? new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format(parseFloat(row[h].replace(/,/g,''))||0)
-          : (row[h]||"");
-        rows+="<td>"+val+"</td>";
+  complete: function(results) {
+    let data = results.data.filter(row => Object.values(row).some(val => val.trim() !== ""));
+    let headers = Object.keys(data[0]);
+
+    // Build table header
+    let thead = "<tr>";
+    headers.forEach(h => thead += "<th>" + h + "</th>");
+    thead += "</tr>";
+    document.querySelector("#assetTable thead").innerHTML = thead;
+
+    // Build table body
+    let rows = "";
+    data.forEach(row => {
+      rows += "<tr>";
+      headers.forEach(h => {
+        if(["NETT PRICE","GST","TOTAL","DEPR","ACC DEPR","NBV"].includes(h)){
+          let val = parseFloat(row[h].replace(/,/g,''))||0;
+          rows += "<td>"+new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR'}).format(val)+"</td>";
+        } else rows += "<td>"+(row[h]||"")+"</td>";
       });
-      rows+="</tr>";
+      rows += "</tr>";
     });
     document.querySelector("#assetTable tbody").innerHTML = rows;
 
-    // Initialize DataTable AFTER tbody populated
+    // Initialize DataTable
     let table = $('#assetTable').DataTable({
       dom:'Bfrtip',
       buttons:['copy','csv','excel','pdf','print'],
@@ -81,7 +83,7 @@ Papa.parse("aset.csv", {
       pageLength:100,
       lengthMenu:[[50,100,500,1000],[50,100,500,1000]],
       paging:true,
-      language: { info:"Showing _MENU_ of _TOTAL_ entries" },
+      language: { info: "Showing _MENU_ of _TOTAL_ entries" },
       footerCallback:function(row,data,start,end,display){
         let api=this.api();
         let parseValue=i=>typeof i==='string'?parseFloat(i.replace(/[^0-9.-]+/g,''))||0:typeof i==='number'?i:0;
@@ -91,6 +93,7 @@ Papa.parse("aset.csv", {
           let sum = api.column(idx,{page:'current'}).data().reduce((a,b)=>parseValue(a)+parseValue(b),0);
           $(api.column(idx).footer()).html(formatRM(sum));
         });
+        api.columns.adjust();
       }
     });
 
@@ -105,6 +108,7 @@ Papa.parse("aset.csv", {
         .on('change',function(){
           let val=$.fn.dataTable.util.escapeRegex($(this).val());
           column.search(val?'^'+val+'$':'',true,false).draw();
+          table.columns.adjust();
         });
       column.data().unique().sort().each(d=>{ if(d) select.append('<option value="'+d+'">'+d+'</option>'); });
     });
